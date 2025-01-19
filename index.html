@@ -1,287 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-    <link rel="shortcut icon" href="assets/favicon.png">
-    <link rel="stylesheet" href="app.js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+    <link rel="shortcut icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="app.js" />
     <title>Antonio Pavic - Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <span class="nav__logo-circle">A</span>
-                <span class="nav__logo-name">Antonio Pavic</span>
-            </a>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-circle">A</span>
+          <span class="nav__logo-name">Antonio Pavic</span>
+        </a>
 
-            <div class="nav__menu" id="nav-menu">
-                <span class="nav__title">Menu</span>
+        <div class="nav__menu" id="nav-menu">
+          <span class="nav__title">Menu</span>
 
-                <h3 class="nav__name">Antonio</h3>
+          <h3 class="nav__name">Antonio</h3>
 
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
-                    </li>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About Me</a>
-                    </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projects</a>
-                    </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
-                    </li>
-                </ul>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link nav__link-button"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
 
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
 
-            <div class="nav__buttons">
-                <!-- Theme button -->
+        <div class="nav__buttons">
+          <!-- Theme button -->
 
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-4-line"></i>
-                </div>
-            </div>
-        </nav>
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home_container container grid">
-                <h1 class="home__name">
-                    Antonio Pavic
-                </h1>
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <h1 class="home__name">Antonio Pavic</h1>
 
-                <div class="home__perfil">
-                    <div class="home__image">
-                        <img src="assets/home-perfil.jpg" alt="image" class="home__img">
-                        <div class="home__shadow"></div>
+          <div class="home__perfil">
+            <div class="home__image">
+              <img src="assets/home-perfil.jpg" alt="image" class="home__img" />
+              <div class="home__shadow"></div>
 
-                        <img src="assets/curved-arrow.svg" alt="" class="home__arrow">
-                        <img src="assets/random-lines.svg" alt="" class="home__line">
+              <img src="assets/curved-arrow.svg" alt="" class="home__arrow" />
+              <img src="assets/random-lines.svg" alt="" class="home__line" />
 
-                        <div class="geometric-box"></div>
-                    </div>
-
-                    <div class="home__social">
-                        <a href="https://www.instagram.com/pavich5/" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/antonio-pavic/" target="_blank" class="home__social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-                        <a href="https://github.com/pavich5?tab=repositories" target="_blank" class="home__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="home__info">
-                    <p class="home__description">
-                        <b>Software Developer</b>, proficient in a wide range of technologies including Next.js, Express, GraphQL, and PostgreSQL. I specialize in both front-end and back-end development, creating dynamic and responsive web applications that deliver exceptional user experiences while maintaining the efficiency and reliability of the server-side.
-                    </p>
-
-
-                    <a href="#about" class="home__scroll">
-                        <div class="home__scroll-box">
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-
-                        <span class="home__scroll-text">Scroll Down</span>
-                    </a>
-                </div>
+              <div class="geometric-box"></div>
             </div>
-        </section>
 
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <div class="about__container container grid">
-                <h2 class="section__title-1">
-                    <span>About Me</span>
-                </h2>
-
-                <div class="about__perfil">
-                    <div class="about__image">
-                        <img src="assets/home-perfil.jpg" alt="image" class="about__img">
-
-                        <div class="about__shadow"></div>
-
-                        <div class="geometric-box"></div>
-                        <img src="/assets/random-lines.svg" alt="" class="about__line">
-                        <div class="about__box"></div>
-                    </div>
-                </div>
-
-                <div class="about__info">
-                    <p class="about__description">
-                        As an <b> Software Developer</b>, I've gained valuable experience in both front-end
-                        and
-                        back-end development. With nearly a year and a half of experience and six successful projects completed, I've honed my skills and continue to strive for excellence in crafting web applications that bring innovation and functionality to the digital landscape.
-                    </p>
-
-                    <ul class="about__list">
-                        <li class="about__item">
-                            <b>My skills include:</b> NextJs, React, PostgreSQL, Express, Node.js, Nest.js,Graphql,GIT,
-                            Docker,Jest,React testing,JavaScript, and I'm dedicated to further enhancing these skills
-                            with each new
-                            project.
-                        </li>
-                    </ul>
-
-
-
-                    <div class="about__buttons">
-                        <a href="#contact" class="button">
-                            <i class="ri-send-plane-line"></i> Contact me
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/antonio-pavic/" target="_blank" class="button__ghost">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="home__social">
+              <a
+                href="https://www.instagram.com/pavich5/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/antonio-pavic/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+              <a
+                href="https://github.com/pavich5?tab=repositories"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-line"></i>
+              </a>
             </div>
-        </section>
+          </div>
 
-        <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
-            <h2 class="section__title-2">
-                <span>Services</span>
-            </h2>
-            
+          <div class="home__info">
+            <p class="home__description">
+              <b>Software Developer</b>, proficient in a wide range of
+              technologies including Next.js, Express, GraphQL, and PostgreSQL.
+              I specialize in both front-end and back-end development, creating
+              dynamic and responsive web applications that deliver exceptional
+              user experiences while maintaining the efficiency and reliability
+              of the server-side.
+            </p>
 
-            <div class="services__container container grid">
-                
-                <article class="services__card">
-                    <div class="services__border"></div>
+            <a href="#about" class="home__scroll">
+              <div class="home__scroll-box">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
 
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-layout-4-line"></i>
-                        </div>
+              <span class="home__scroll-text">Scroll Down</span>
+            </a>
+          </div>
+        </div>
+      </section>
 
-                        <h2 class="services__title">Front-End Development</h2>
-                        <p class="services__description">
-                            Crafting engaging and user-friendly front-end interfaces with technologies
-                            like NextJs,React, Angular, and more to create exceptional digital experiences.
-                        </p>
-                    </div>
-                </article>
-                <article class="services__card">
-                    <div class="services__border"></div>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <h2 class="section__title-1">
+            <span>About Me</span>
+          </h2>
 
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-code-box-line"></i>
-                        </div>
+          <div class="about__perfil">
+            <div class="about__image">
+              <img
+                src="assets/home-perfil.jpg"
+                alt="image"
+                class="about__img"
+              />
 
-                        <h2 class="services__title">Software Developer</h2>
-                        <p class="services__description">
-                            Crafting end-to-end solutions using the power of JavaScript, from dynamic front-end interfaces to back-end systems, while continuously learning and improving SQL database management. I also have a little experience with C# for back-end development.
-                        </p>
-                    </div>
-                </article>
+              <div class="about__shadow"></div>
 
-                <article class="services__card">
-                    <div class="services__border"></div>
-
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-database-line"></i>
-                        </div>
-
-                        <h2 class="services__title">SQL Database Learning</h2>
-                        <p class="services__description">
-                            Beginning my journey in SQL database management, I'm dedicated to learning
-                            and gaining proficiency in designing and managing SQL databases for your applications.
-                        </p>
-                    </div>
-                </article>
-
+              <div class="geometric-box"></div>
+              <img src="/assets/random-lines.svg" alt="" class="about__line" />
+              <div class="about__box"></div>
             </div>
-        </section>
+          </div>
 
-        <!--==================== PROJECTS ====================-->
-        <section class="projects section" id="projects">
-            <h2 class="section__title-1">
-                <span>Projects</span>
-            </h2>
+          <div class="about__info">
+            <p class="about__description">
+              As an <b> Software Developer</b>, I've gained valuable experience
+              in both front-end and back-end development. With nearly a year and
+              a half of experience and six successful projects completed, I've
+              honed my skills and continue to strive for excellence in crafting
+              web applications that bring innovation and functionality to the
+              digital landscape.
+            </p>
 
-            <div class="projects__container container grid">
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="assets/download (1).jpeg" alt="image" class="projects__img">
+            <ul class="about__list">
+              <li class="about__item">
+                <b>My skills include:</b> NextJs, React, PostgreSQL, Express,
+                Node.js, Nest.js,Graphql,GIT, Docker,Jest,React
+                testing,JavaScript, and I'm dedicated to further enhancing these
+                skills with each new project.
+              </li>
+            </ul>
 
-                        <a target="_blank" href="https://travel-agency-plum.vercel.app/" class="projects__button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
+            <div class="about__buttons">
+              <a href="#contact" class="button">
+                <i class="ri-send-plane-line"></i> Contact me
+              </a>
 
-                    <div class="projects__content">
-                        <h3 class="projects__subtitle">Agency</h3>
-                        <h2 class="projects__title">Travel Agency</h2>
-                    
-                        <p class="projects__description">
-                            A web app showcasing travel offers across 12 countries and 4 seasons. Our Travel AI assists with travel-related questions,
-                            and our blog section allows users to share experiences, post, and comment. We use Stripe for payments, sending email confirmations
-                            upon successful transactions, and utilize Clerk for user authentication and Google login.
-                        </p>
-                    </div>
-                    
+              <a
+                href="https://www.linkedin.com/in/antonio-pavic/"
+                target="_blank"
+                class="button__ghost"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <div class="projects__buttons">
-                        <a href="https://github.com/pavich5/Travel-Agency" target="_blank" class="projects__link">
-                            <i class="ri-github-line"></i> View
-                        </a>
-                    </div>
-                </article>
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="assets/download (2).jpeg" alt="image" class="projects__img">
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title-2">
+          <span>Services</span>
+        </h2>
 
-                        <a target="_blank" href="https://car-seller-qa.vercel.app/" class="projects__button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
+        <div class="services__container container grid">
+          <article class="services__card">
+            <div class="services__border"></div>
 
-                    <div class="projects__content">
-                        <h3 class="projects__subtitle">App</h3>
-                        <h2 class="projects__title">Car Selling</h2>
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-layout-4-line"></i>
+              </div>
 
-                        <p class="projects__description">
-                            A responsive car-selling web app with an intuitive UI and advanced filters, allowing users to browse and find vehicles easily. The platform supports user authentication, enabling sellers to log in and post their cars online for sale. Optimized for mobile devices, it ensures a seamless experience across all screens.
-                        </p>
+              <h2 class="services__title">Front-End Development</h2>
+              <p class="services__description">
+                Crafting engaging and user-friendly front-end interfaces with
+                technologies like NextJs,React, Angular, and more to create
+                exceptional digital experiences.
+              </p>
+            </div>
+          </article>
+          <article class="services__card">
+            <div class="services__border"></div>
 
-                    </div>
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-code-box-line"></i>
+              </div>
 
-                    <div class="projects__buttons">
-                        <a href="https://github.com/pavich5/Car-Seller" target="_blank" class="projects__link">
-                            <i class="ri-github-line"></i> View
-                        </a>
-                    </div>
-                </article>
-                <!-- <article class="projects__card">
+              <h2 class="services__title">Software Developer</h2>
+              <p class="services__description">
+                Crafting end-to-end solutions using the power of JavaScript,
+                from dynamic front-end interfaces to back-end systems, while
+                continuously learning and improving SQL database management. I
+                also have a little experience with C# for back-end development.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-database-line"></i>
+              </div>
+
+              <h2 class="services__title">SQL Database Learning</h2>
+              <p class="services__description">
+                Beginning my journey in SQL database management, I'm dedicated
+                to learning and gaining proficiency in designing and managing
+                SQL databases for your applications.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title-1">
+          <span>Projects</span>
+        </h2>
+
+        <div class="projects__container container grid">
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/mojprevoz.jpg"
+                alt="image"
+                class="projects__img"
+              />
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Mobile Application</h3>
+              <h2 class="projects__title">Moj Prevoz</h2>
+
+              <p class="projects__description">
+                Moj Prevoz is a social-media-inspired ride-sharing app designed
+                for travelers in Macedonia. With features like effortless post
+                creation, powerful filters, and live messaging with location
+                sharing, it connects drivers and passengers quickly and
+                securely. The intuitive interface and dark theme enhance
+                usability, making it the go-to solution for affordable travel.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://apps.apple.com/mk/app/moj-prevoz/id6739589145"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-apple-line"></i> App Store
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.myapp.ridesharing&fbclid=PAZXh0bgNhZW0CMTEAAaa18tykzkcz52ww425FPbJe3pfEwkOz7C4uDckyyye3iSF51-xkTCKigZA_aem_dFY896izowfT-BTKbPqGIQ"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-google-play-line"></i> Google Play
+              </a>
+              <a
+                href="https://www.instagram.com/mojprevoz/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-instagram-line"></i> Instagram
+              </a>
+            </div>
+          </article>
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/download (1).jpeg"
+                alt="image"
+                class="projects__img"
+              />
+
+              <a
+                target="_blank"
+                href="https://travel-agency-plum.vercel.app/"
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Agency</h3>
+              <h2 class="projects__title">Travel Agency</h2>
+
+              <p class="projects__description">
+                A web app showcasing travel offers across 12 countries and 4
+                seasons. Our Travel AI assists with travel-related questions,
+                and our blog section allows users to share experiences, post,
+                and comment. We use Stripe for payments, sending email
+                confirmations upon successful transactions, and utilize Clerk
+                for user authentication and Google login.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/pavich5/Travel-Agency"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+            </div>
+          </article>
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/download (2).jpeg"
+                alt="image"
+                class="projects__img"
+              />
+
+              <a
+                target="_blank"
+                href="https://car-seller-qa.vercel.app/"
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">App</h3>
+              <h2 class="projects__title">Car Selling</h2>
+
+              <p class="projects__description">
+                A responsive car-selling web app with an intuitive UI and
+                advanced filters, allowing users to browse and find vehicles
+                easily. The platform supports user authentication, enabling
+                sellers to log in and post their cars online for sale. Optimized
+                for mobile devices, it ensures a seamless experience across all
+                screens.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/pavich5/Car-Seller"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+            </div>
+          </article>
+          <!-- <article class="projects__card">
                     <div class="projects__image">
                         <img src="assets/download (3).jpeg" alt="image" class="projects__img">
                 
@@ -305,182 +412,241 @@
                         </span>
                     </div>
                 </article> -->
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="assets/burgers.png" alt="image" class="projects__img">
-                
-                        <a target="_blank" href="https://burgers-by-pavic-t8dj.vercel.app/" class="projects__button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-                
-                    <div class="projects__content">
-                        <h3 class="projects__subtitle">App</h3>
-                        <h2 class="projects__title">Burgers By Pavic</h2>
-                
-                        <p class="projects__description">
-                            Burgers by Pavic is a convenient food ordering app where users can explore a variety of delicious burgers, shakes, and more. Customize your orders to suit your taste, add special instructions, and enjoy a seamless ordering experience.                        </p>
-                    </div>
-                
-                    <div class="projects__buttons">
-                        <a href="https://github.com/pavich5/BurgersByPavic" target="_blank" class="projects__link">
-                            <i class="ri-github-line"></i> View
-                        </a>
-                    </div>
-                </article>
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="assets/GitHub-logo.png" alt="image" class="projects__img">
-    
-                        <a  target="_blank" href="https://github.com/pavich5?tab=repositories" class="projects__button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-    
-                    <div class="projects__content">
-                        <h3 class="projects__subtitle">Git</h3>
-                        <h2 class="projects__title">Git Hub</h2>
-    
-                        <p class="projects__description">
-                           Also Feel free to checkout my github, there are even more projects that are not posted
-                           and more infomartion about me
-                        </p>
-                    </div>
-    
-                    <div class="projects__buttons">
-                        <a href="https://github.com/pavich5?tab=repositories" target="_blank" class="projects__link">
-                            <i class="ri-github-line"></i> View
-                        </a>
-                    </div>
-                </article>
-            
+          <article class="projects__card">
+            <div class="projects__image">
+              <img src="assets/burgers.png" alt="image" class="projects__img" />
+
+              <a
+                target="_blank"
+                href="https://burgers-by-pavic-t8dj.vercel.app/"
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
             </div>
 
-        </section>
+            <div class="projects__content">
+              <h3 class="projects__subtitle">App</h3>
+              <h2 class="projects__title">Burgers By Pavic</h2>
 
-        <!--==================== CONTACT ====================-->
-        <section class="contact section" id="contact">
-            <div class="contact__container grid">
-                <div class="contact__data">
-                    <h2 class="section__title-2">
-                        <span>Contact me</span>
-                    </h2>
-
-                    <p class="contact__description-1">
-                        I will read all emails. Send me any
-                        message you want and I'll get back to you.
-                    </p>
-
-                    <p class="contact__description-2">
-                        I need your <b>Name</b> and <b>Email Address</b>, but
-                        you won't receive anything other than your reply.
-                    </p>
-
-                    <div class="geometric-box"></div>
-                </div>
-
-                <div class="contact__mail">
-                    <h2 class="contact__title">
-                        Send Me A Message
-                    </h2>
-
-                    <form action="" class="contact__form" id="contact-form">
-                        <div class="contact__group">
-                            <div class="contact__box">
-                                <input type="text" name="user_name" class="contact__input" id="name" required
-                                    placeholder="First Name">
-                                <label for="name" class="contact__label">First Name</label>
-                            </div>
-
-                            <div class="contact__box">
-                                <input type="email" name="user_email" class="contact__input" id="email" required
-                                    placeholder="Email Address">
-                                <label for="email" class="contact__label">Email Address</label>
-                            </div>
-                        </div>
-
-                        <div class="contact__box">
-                            <input type="text" name="user_subject" class="contact__input" id="subject" required
-                                placeholder="Subject">
-                            <label for="subject" class="contact__label">Subject</label>
-                        </div>
-
-                        <div class="contact__box contact__area">
-                            <textarea name="user_message" id="message" class="contact__input" required
-                                placeholder="">Message</textarea>
-                            <label for="message" class="contact__label">Message</label>
-                        </div>
-
-                        <p class="contact__message" id="contact-message"></p>
-
-                        <button type="submit" class="contact__button button">
-                            <i class="ri-send-plane-line"></i> Send Message
-                        </button>
-                    </form>
-                </div>
-
-                <div class="contact__social">
-                    <img src="assets/curved-arrow.svg" alt="" class="contact__social-arrow">
-
-                    <div class="contact__social-data">
-                        <div>
-                            <p class="contact__social-description-1">
-                                Does not send emails
-                            </p>
-
-                            <p class="contact__social-description-1">
-                                Contact me on my social networks
-                            </p>
-                        </div>
-
-                        <div class="contact__social-links">
-                            <a href="https://www.facebook.com/antonio.pavich" target="_blank"
-                                class="contact__social-link">
-                                <i class="ri-facebook-circle-line"></i>
-                            </a>
-
-                            <a href="https://www.instagram.com/pavich5/" target="_blank" class="contact__social-link">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/in/antonio-pavic/" target="_blank"
-                                class="contact__social-link">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+              <p class="projects__description">
+                Burgers by Pavic is a convenient food ordering app where users
+                can explore a variety of delicious burgers, shakes, and more.
+                Customize your orders to suit your taste, add special
+                instructions, and enjoy a seamless ordering experience.
+              </p>
             </div>
-        </section>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/pavich5/BurgersByPavic"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+            </div>
+          </article>
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/GitHub-logo.png"
+                alt="image"
+                class="projects__img"
+              />
+
+              <a
+                target="_blank"
+                href="https://github.com/pavich5?tab=repositories"
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Git</h3>
+              <h2 class="projects__title">Git Hub</h2>
+
+              <p class="projects__description">
+                Also Feel free to checkout my github, there are even more
+                projects that are not posted and more infomartion about me
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/pavich5?tab=repositories"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__data">
+            <h2 class="section__title-2">
+              <span>Contact me</span>
+            </h2>
+
+            <p class="contact__description-1">
+              I will read all emails. Send me any message you want and I'll get
+              back to you.
+            </p>
+
+            <p class="contact__description-2">
+              I need your <b>Name</b> and <b>Email Address</b>, but you won't
+              receive anything other than your reply.
+            </p>
+
+            <div class="geometric-box"></div>
+          </div>
+
+          <div class="contact__mail">
+            <h2 class="contact__title">Send Me A Message</h2>
+
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__group">
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    name="user_name"
+                    class="contact__input"
+                    id="name"
+                    required
+                    placeholder="First Name"
+                  />
+                  <label for="name" class="contact__label">First Name</label>
+                </div>
+
+                <div class="contact__box">
+                  <input
+                    type="email"
+                    name="user_email"
+                    class="contact__input"
+                    id="email"
+                    required
+                    placeholder="Email Address"
+                  />
+                  <label for="email" class="contact__label"
+                    >Email Address</label
+                  >
+                </div>
+              </div>
+
+              <div class="contact__box">
+                <input
+                  type="text"
+                  name="user_subject"
+                  class="contact__input"
+                  id="subject"
+                  required
+                  placeholder="Subject"
+                />
+                <label for="subject" class="contact__label">Subject</label>
+              </div>
+
+              <div class="contact__box contact__area">
+                <textarea
+                  name="user_message"
+                  id="message"
+                  class="contact__input"
+                  required
+                  placeholder=""
+                >
+Message</textarea
+                >
+                <label for="message" class="contact__label">Message</label>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+
+              <button type="submit" class="contact__button button">
+                <i class="ri-send-plane-line"></i> Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="contact__social">
+            <img
+              src="assets/curved-arrow.svg"
+              alt=""
+              class="contact__social-arrow"
+            />
+
+            <div class="contact__social-data">
+              <div>
+                <p class="contact__social-description-1">
+                  Does not send emails
+                </p>
+
+                <p class="contact__social-description-1">
+                  Contact me on my social networks
+                </p>
+              </div>
+
+              <div class="contact__social-links">
+                <a
+                  href="https://www.facebook.com/antonio.pavich"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="ri-facebook-circle-line"></i>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/pavich5/"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="ri-instagram-line"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/antonio-pavic/"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
-        <div class="footer__container container grid">
-            <ul class="footer__links">
-                <li>
-                    <a href="#about" class="footer_link">About</a>
-                </li>
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li>
+            <a href="#about" class="footer_link">About</a>
+          </li>
 
-                <li>
-                    <a href="#services" class="footer_link">Services</a>
-                </li>
+          <li>
+            <a href="#services" class="footer_link">Services</a>
+          </li>
 
-                <li>
-                    <a href="#projects" class="footer_link">Projects</a>
-                </li>
-            </ul>
+          <li>
+            <a href="#projects" class="footer_link">Projects</a>
+          </li>
+        </ul>
 
-            <span class="footer__copy">
-                &#169; All Rights Reserved
-            </span>
-        </div>
+        <span class="footer__copy"> &#169; All Rights Reserved </span>
+      </div>
     </footer>
 
     <!--========== SCROLL UP ==========-->
 
     <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-s-line"></i>
+      <i class="ri-arrow-up-s-line"></i>
     </a>
 
     <!--=============== SCROLLREVEAL ===============-->
@@ -491,6 +657,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
