@@ -1606,11 +1606,9 @@ body.dark-theme{
     }
 }
 
-/* Hide curved arrow and random lines on iOS */
-@supports (-webkit-touch-callout: none) {
-  .home__arrow,
-  .home__line,
-  .about__line {
-    display: none;
-  }
+
+@media screen and (max-width: 1024px) {
+    .home__social {
+       display: none
+    }
 }
