@@ -1605,3 +1605,12 @@ body.dark-theme{
         right: 3rem;
     }
 }
+
+/* Hide curved arrow and random lines on iOS */
+@supports (-webkit-touch-callout: none) {
+  .home__arrow,
+  .home__line,
+  .about__line {
+    display: none;
+  }
+}
