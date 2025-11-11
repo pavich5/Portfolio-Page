@@ -770,6 +770,12 @@ body.dark-theme{
     margin-bottom: .75rem;
 }
 
+.projects__img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 .projects__button{
     position: absolute;
