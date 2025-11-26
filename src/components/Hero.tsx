@@ -1,6 +1,7 @@
 import { Download, Mail, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { useIsMobile } from './ui/use-mobile';
 
 const techStack = [
   { name: 'React', icon: '⚛️' },
@@ -12,6 +13,7 @@ const techStack = [
 ];
 
 export function Hero() {
+  const isMobile = useIsMobile();
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -38,13 +40,15 @@ export function Hero() {
             className="space-y-6"
           >
             {/* Mobile Image */}
-            <div className="relative mx-auto mb-8 w-full max-w-xs h-64 rounded-3xl overflow-hidden border-4 border-emerald-500/70 shadow-xl lg:hidden">
-              <ImageWithFallback
-                src="/assets/home-perfil.jpg"
-                alt="Antonio Pavic"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            {isMobile && (
+              <div className="relative mx-auto mb-8 w-full max-w-xs h-64 rounded-3xl overflow-hidden border-4 border-emerald-500/70 shadow-xl mt-4">
+                <ImageWithFallback
+                  src="/assets/home-perfil.jpg"
+                  alt="Antonio Pavic"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            )}
 
             <div>
               <motion.h1
@@ -138,22 +142,24 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="relative hidden lg:block"
-          >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-3xl blur-2xl opacity-20" />
-              <ImageWithFallback
-                src="/assets/home-perfil.jpg"
-                alt="Antonio Pavic"
-                className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover"
-              />
-            </div>
-          </motion.div>
+          {/* Hero Image */}
+          {!isMobile && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="relative mt-8 lg:mt-0"
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-3xl blur-2xl opacity-20" />
+                <ImageWithFallback
+                  src="/assets/home-perfil.jpg"
+                  alt="Antonio Pavic"
+                  className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover"
+                />
+              </div>
+            </motion.div>
+          )}
         </div>
       </div>
     </section>
