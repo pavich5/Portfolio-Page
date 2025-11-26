@@ -173,10 +173,7 @@ export function Projects() {
           </p>
         </motion.div>
 
-        <div
-          className="gap-8"
-          style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: '2rem' }}
-        >
+        <div className="projects-grid">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}

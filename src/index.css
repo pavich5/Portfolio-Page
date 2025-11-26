@@ -1907,6 +1907,19 @@ html {
   inherits: false
 }
 
+/* Custom layout: projects grid - 1 column on mobile, 3 on large screens */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (width >= 64rem) {
+  .projects-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @property --tw-backdrop-blur {
   syntax: "*";
   inherits: false

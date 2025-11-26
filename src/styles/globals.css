@@ -192,3 +192,16 @@ html,
 body {
   overflow-x: hidden;
 }
+
+/* Projects grid: 1 column on mobile, 3 on desktop */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
