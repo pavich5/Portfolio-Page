@@ -1699,6 +1699,12 @@ html {
   font-size: var(--font-size);
 }
 
+/* Prevent horizontal scrolling on all devices */
+html,
+body {
+  overflow-x: hidden;
+}
+
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
