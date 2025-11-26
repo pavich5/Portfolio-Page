@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { ExternalLink, Github, Smartphone, Globe, Instagram } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-
+import React from 'react';
 // Synced with root index.html projects section
 const projects = [
   {
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: 'Cockpit',
-    subtitle: 'AI-Powered Assistant (Contributor)',
+    subtitle: 'AI Assistant (Contributor)',
     description:
       'Cockpit is an AI assistant that turns every call into action. It captures notes, enriches HubSpot, sends follow-ups, and coaches reps automatically. Beyond transcription, it delivers structured notes, HubSpot field autofill, embedded coaching, and AskAnything knowledge search.',
     image: '/assets/687910b043eb3168716a790a_best-ai-meeting-assistant.jpg',
@@ -193,6 +193,13 @@ export function Projects() {
                   <ImageWithFallback
                     src={project.image}
                     alt={project.title}
+                    style={{ 
+                      objectPosition: project.title === 'Cockpit' 
+                        ? 'left center' 
+                        : project.title === 'Pabau' 
+                        ? 'center top' 
+                        : 'center center' 
+                    }}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-20`} />
