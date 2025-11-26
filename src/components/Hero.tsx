@@ -37,6 +37,15 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
+            {/* Mobile Image */}
+            <div className="relative mx-auto mb-8 w-full max-w-xs h-64 rounded-3xl overflow-hidden border-4 border-emerald-500/70 shadow-xl lg:hidden">
+              <ImageWithFallback
+                src="/assets/home-perfil.jpg"
+                alt="Antonio Pavic"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
             <div>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
