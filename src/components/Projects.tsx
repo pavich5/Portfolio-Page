@@ -146,7 +146,7 @@ const projects = [
     ],
     gradient: 'from-gray-700 to-gray-900',
     bgGradient: 'from-gray-700/10 to-gray-900/10'
-  },
+  }
 ];
 
 export function Projects() {
