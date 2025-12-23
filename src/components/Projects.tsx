@@ -5,6 +5,85 @@ import React from 'react';
 // Synced with root index.html projects section
 const projects = [
   {
+    title: 'Smart Termin',
+    subtitle: 'SaaS Booking Platform',
+    description:
+      'Smart Termin is a comprehensive SaaS booking platform designed for beauty professionals (barbers, nail technicians, lash artists, makeup artists, hair stylists) to manage appointments, clients, and business operations. It connects beauty professionals with clients through an automated booking system that handles scheduling, notifications, and business management.',
+    image: '/assets/smarttermin.png',
+    features: [
+      'Automated appointment booking system',
+      'Artist dashboard with calendar & analytics',
+      'Client directory with search & filters',
+      'Portfolio management & reviews',
+      'Subscription-based SaaS model'
+    ],
+    links: [
+      {
+        label: 'Live Site',
+        icon: ExternalLink,
+        url: 'https://smartermin.com/'
+      }
+    ],
+    gradient: 'from-pink-500 to-purple-500',
+    bgGradient: 'from-pink-500/10 to-purple-500/10'
+  },
+  {
+    title: 'Moj Prevoz',
+    subtitle: 'Mobile Application',
+    description:
+      'Moj Prevoz is a comprehensive social-media-inspired ride-sharing platform designed for travelers and drivers in North Macedonia to share rides, find travel companions, and coordinate journeys efficiently. It connects drivers with passengers through an intuitive mobile interface that handles ride post creation, advanced filtering, live messaging with location sharing, and real-time trip coordination.',
+    image: '/assets/moj.png',
+    features: [
+      'Ride-sharing app for North Macedonia',
+      'Effortless ride post creation',
+      'Powerful search & filters',
+      'Live messaging with location sharing',
+      'Dark theme & intuitive UI'
+    ],
+    links: [
+      {
+        label: 'App Store',
+        icon: Smartphone,
+        url: 'https://apps.apple.com/mk/app/moj-prevoz/id6739589145'
+      },
+      {
+        label: 'Google Play',
+        icon: Smartphone,
+        url: 'https://play.google.com/store/apps/details?id=com.myapp.ridesharing&fbclid=PAZXh0bgNhZW0CMTEAAaa18tykzkcz52ww425FPbJe3pfEwkOz7C4uDckyyye3iSF51-xkTCKigZA_aem_dFY896izowfT-BTKbPqGIQ'
+      },
+    ],
+    gradient: 'from-blue-500 to-indigo-500',
+    bgGradient: 'from-blue-500/10 to-indigo-500/10'
+  },
+  {
+    title: 'AutoMK',
+    subtitle: 'Car Selling Website',
+    description:
+      'AutoMK is a comprehensive car marketplace platform designed for buyers and sellers in North Macedonia to browse, search, and list vehicles efficiently. It connects car sellers with potential buyers through an intuitive interface that handles vehicle listings, advanced filtering, user authentication, and seamless browsing experience across all devices.',
+    image: '/assets/cars.png',
+    features: [
+      'Responsive car marketplace',
+      'Advanced vehicle filters',
+      'User authentication for sellers',
+      'Optimized for mobile & desktop',
+      'Clean, modern interface'
+    ],
+    links: [
+      {
+        label: 'Live Site',
+        icon: ExternalLink,
+        url: 'https://auto-mk.vercel.app/'
+      },
+      {
+        label: 'GitHub',
+        icon: Github,
+        url: 'https://github.com/pavich5/AutoMK'
+      }
+    ],
+    gradient: 'from-orange-500 to-red-500',
+    bgGradient: 'from-orange-500/10 to-red-500/10'
+  },
+  {
     title: 'Pabau',
     subtitle: 'Healthcare Platform (Contributor)',
     description:
@@ -41,90 +120,6 @@ const projects = [
     ],
     gradient: 'from-purple-500 to-pink-500',
     bgGradient: 'from-purple-500/10 to-pink-500/10'
-  },
-  {
-    title: 'Smart Termin',
-    subtitle: 'SaaS Booking Platform',
-    description:
-      'Smart Termin is a comprehensive SaaS booking platform designed for beauty professionals (barbers, nail technicians, lash artists, makeup artists, hair stylists) to manage appointments, clients, and business operations. It connects beauty professionals with clients through an automated booking system that handles scheduling, notifications, and business management.',
-    image: '/assets/smarttermin.png',
-    features: [
-      'Automated appointment booking system',
-      'Artist dashboard with calendar & analytics',
-      'Client directory with search & filters',
-      'Portfolio management & reviews',
-      'Subscription-based SaaS model'
-    ],
-    links: [
-      {
-        label: 'Live Site',
-        icon: ExternalLink,
-        url: 'https://smartermin.com/'
-      }
-    ],
-    gradient: 'from-pink-500 to-purple-500',
-    bgGradient: 'from-pink-500/10 to-purple-500/10'
-  },
-  {
-    title: 'Moj Prevoz',
-    subtitle: 'Mobile Application',
-    description:
-      'Moj Prevoz is a social-media-inspired ride-sharing app designed for travelers in Macedonia. With effortless post creation, powerful filters, and live messaging with location sharing, it connects drivers and passengers quickly and securely.',
-    image: '/assets/mojprevoz.jpg',
-    features: [
-      'Ride-sharing app for North Macedonia',
-      'Effortless ride post creation',
-      'Powerful search & filters',
-      'Live messaging with location sharing',
-      'Dark theme & intuitive UI'
-    ],
-    links: [
-      {
-        label: 'App Store',
-        icon: Smartphone,
-        url: 'https://apps.apple.com/mk/app/moj-prevoz/id6739589145'
-      },
-      {
-        label: 'Google Play',
-        icon: Smartphone,
-        url: 'https://play.google.com/store/apps/details?id=com.myapp.ridesharing&fbclid=PAZXh0bgNhZW0CMTEAAaa18tykzkcz52ww425FPbJe3pfEwkOz7C4uDckyyye3iSF51-xkTCKigZA_aem_dFY896izowfT-BTKbPqGIQ'
-      },
-      {
-        label: 'Instagram',
-        icon: Instagram,
-        url: 'https://www.instagram.com/mojprevoz/'
-      }
-    ],
-    gradient: 'from-blue-500 to-indigo-500',
-    bgGradient: 'from-blue-500/10 to-indigo-500/10'
-  },
-  {
-    title: 'AutoMK',
-    subtitle: 'Car Selling Website',
-    description:
-      'A responsive car-selling web app with an intuitive UI and advanced filters, allowing users to browse and find vehicles easily. Sellers can log in, post their cars, and manage listings with a seamless experience across all screens.',
-    image: '/assets/cars.png',
-    features: [
-      'Responsive car marketplace',
-      'Advanced vehicle filters',
-      'User authentication for sellers',
-      'Optimized for mobile & desktop',
-      'Clean, modern interface'
-    ],
-    links: [
-      {
-        label: 'Live Site',
-        icon: ExternalLink,
-        url: 'https://auto-mk.vercel.app/'
-      },
-      {
-        label: 'GitHub',
-        icon: Github,
-        url: 'https://github.com/pavich5/AutoMK'
-      }
-    ],
-    gradient: 'from-orange-500 to-red-500',
-    bgGradient: 'from-orange-500/10 to-red-500/10'
   },
   {
     title: 'GitHub',
