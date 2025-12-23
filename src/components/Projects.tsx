@@ -103,7 +103,7 @@ const projects = [
     subtitle: 'Car Selling Website',
     description:
       'A responsive car-selling web app with an intuitive UI and advanced filters, allowing users to browse and find vehicles easily. Sellers can log in, post their cars, and manage listings with a seamless experience across all screens.',
-    image: '/assets/download (2).jpeg',
+    image: '/assets/cars.png',
     features: [
       'Responsive car marketplace',
       'Advanced vehicle filters',
