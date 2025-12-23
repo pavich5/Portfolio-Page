@@ -99,7 +99,7 @@ const projects = [
     bgGradient: 'from-blue-500/10 to-indigo-500/10'
   },
   {
-    title: 'Auto Makedonija',
+    title: 'AutoMK',
     subtitle: 'Car Selling Website',
     description:
       'A responsive car-selling web app with an intuitive UI and advanced filters, allowing users to browse and find vehicles easily. Sellers can log in, post their cars, and manage listings with a seamless experience across all screens.',
@@ -115,12 +115,12 @@ const projects = [
       {
         label: 'Live Site',
         icon: ExternalLink,
-        url: 'https://car-seller-qa.vercel.app/'
+        url: 'https://auto-mk.vercel.app/'
       },
       {
         label: 'GitHub',
         icon: Github,
-        url: 'https://github.com/pavich5/Car-Seller'
+        url: 'https://github.com/pavich5/AutoMK'
       }
     ],
     gradient: 'from-orange-500 to-red-500',
