@@ -100,7 +100,7 @@ const projects = [
     subtitle: 'AI Assistant (Contributor)',
     description:
       'Cockpit is an AI assistant that turns every call into action. It captures notes, enriches HubSpot, sends follow-ups, and coaches reps automatically. Beyond transcription, it delivers structured notes, HubSpot field autofill, embedded coaching, and AskAnything knowledge search.',
-    image: '/assets/687910b043eb3168716a790a_best-ai-meeting-assistant.jpg',
+    image: '/assets/ChatGPT Image May 14, 2026, 05_16_46 PM.png',
     features: [
       'AI-powered note taking & transcription',
       'Automatic CRM enrichment (HubSpot)',
