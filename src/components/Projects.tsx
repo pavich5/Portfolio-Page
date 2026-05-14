@@ -181,10 +181,14 @@ export function Projects() {
                       objectPosition: ['Cockpit', 'Pabau', 'Quarzo Life'].includes(project.title)
                         ? 'left center' 
                         : project.title === 'Smart Termin'
-                        ? 'left center'
+                        ? 'center center'
                         : 'center center' 
                     }}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className={`h-full object-cover group-hover:scale-110 transition-transform duration-500 ${
+                      project.title === 'Smart Termin'
+                        ? 'w-[calc(100%-0.5rem)] ml-2 md:w-full md:ml-0'
+                        : 'w-full'
+                    }`}
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-20`} />
                 </div>
