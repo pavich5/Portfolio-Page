@@ -56,29 +56,22 @@ const projects = [
     bgGradient: 'from-blue-500/10 to-indigo-500/10'
   },
   {
-    title: 'AutoMK',
-    subtitle: 'Car Selling Website',
+    title: 'Quarzo Life',
+    subtitle: 'Life insurance (Contributor)',
     description:
-      'AutoMK is a comprehensive car marketplace platform designed for buyers and sellers in North Macedonia to browse, search, and list vehicles efficiently. It connects car sellers with potential buyers through an intuitive interface that handles vehicle listings, advanced filtering, user authentication, and seamless browsing experience across all devices.',
-    image: '/assets/cars.png',
+      'Quarzo Life is a modern life insurance infrastructure platform in France that helps financial institutions, wealth managers, and fintechs distribute long-term savings and investment products digitally. It offers API integrations, ready-to-use customer journeys, real-time data, and automated operations for life insurance, retirement plans, capitalization contracts, and insured equity savings plans efficiently.',
+    image: '/assets/quarzo.png',
     features: [
-      'Responsive car marketplace',
-      'Advanced vehicle filters',
-      'User authentication for sellers',
-      'Optimized for mobile & desktop',
-      'Clean, modern interface'
+      'Native API integration or ready-to-use journeys',
+      'Real-time data',
+      'Zero operational friction'
     ],
     links: [
       {
         label: 'Live Site',
         icon: ExternalLink,
-        url: 'https://auto-mk.vercel.app/'
+        url: 'https://www.quarzo-life.com/'
       },
-      {
-        label: 'GitHub',
-        icon: Github,
-        url: 'https://github.com/pavich5/AutoMK'
-      }
     ],
     gradient: 'from-orange-500 to-red-500',
     bgGradient: 'from-orange-500/10 to-red-500/10'
