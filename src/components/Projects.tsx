@@ -178,10 +178,8 @@ export function Projects() {
                     src={project.image}
                     alt={project.title}
                     style={{ 
-                      objectPosition: project.title === 'Cockpit' 
+                      objectPosition: ['Cockpit', 'Pabau', 'Quarzo Life'].includes(project.title)
                         ? 'left center' 
-                        : project.title === 'Pabau' 
-                        ? 'center top' 
                         : 'center center' 
                     }}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
