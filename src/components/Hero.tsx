@@ -43,7 +43,7 @@ export function Hero() {
             {isMobile && (
               <div className="relative mx-auto mb-8 w-full max-w-xs h-64 rounded-3xl overflow-hidden border-4 border-emerald-500/70 shadow-xl mt-4">
                 <ImageWithFallback
-                  src="/assets/home-perfil.jpg"
+                  src="/assets/antonio-hero.jpg"
                   alt="Antonio Pavic"
                   className="w-full h-full object-cover"
                 />
@@ -153,7 +153,7 @@ export function Hero() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-3xl blur-2xl opacity-20" />
                 <ImageWithFallback
-                  src="/assets/home-perfil.jpg"
+                  src="/assets/antonio-hero.jpg"
                   alt="Antonio Pavic"
                   className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover"
                 />

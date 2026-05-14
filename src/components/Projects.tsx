@@ -9,7 +9,7 @@ const projects = [
     subtitle: 'SaaS Booking Platform',
     description:
       'Smart Termin is a comprehensive SaaS booking platform designed for beauty professionals (barbers, nail technicians, lash artists, makeup artists, hair stylists) to manage appointments, clients, and business operations. It connects beauty professionals with clients through an automated booking system that handles scheduling, notifications, and business management.',
-    image: '/assets/smarttermin.png',
+    image: '/assets/project-smart-termin.png',
     features: [
       'Automated appointment booking system',
       'Artist dashboard with calendar & analytics',
@@ -32,7 +32,7 @@ const projects = [
     subtitle: 'Mobile Application',
     description:
       'Moj Prevoz is a comprehensive social-media-inspired ride-sharing platform designed for travelers and drivers in North Macedonia to share rides, find travel companions, and coordinate journeys efficiently. It connects drivers with passengers through an intuitive mobile interface that handles ride post creation, advanced filtering, live messaging with location sharing, and real-time trip coordination.',
-    image: '/assets/moj.png',
+    image: '/assets/project-moj-prevoz.png',
     features: [
       'Ride-sharing app for North Macedonia',
       'Effortless ride post creation',
@@ -60,7 +60,7 @@ const projects = [
     subtitle: 'Life insurance (Contributor)',
     description:
       'Quarzo Life is a modern life insurance infrastructure platform in France that helps financial institutions, wealth managers, and fintechs distribute long-term savings and investment products digitally. It offers API integrations, ready-to-use customer journeys, real-time data, and automated operations for life insurance, retirement plans, capitalization contracts, and insured equity savings plans efficiently.',
-    image: '/assets/quarzo.png',
+    image: '/assets/project-quarzo-life.png',
     features: [
       'Native API integration or ready-to-use journeys',
       'Real-time data',
@@ -81,7 +81,7 @@ const projects = [
     subtitle: 'Healthcare Platform (Contributor)',
     description:
       'Pabau is an all-in-one practice management platform used by medical, aesthetics, and wellness clinics to manage appointments, patient records, staff workflows, marketing, and billing in one place. While not a personal side project, it is a product I significantly contributed to while working at the company.',
-    image: '/assets/Pabau-Feature-Image (1).jpg',
+    image: '/assets/project-pabau.jpg',
     features: [
       'All-in-one healthcare practice management',
       'HIPAA-compliant patient data handling',
@@ -100,7 +100,7 @@ const projects = [
     subtitle: 'AI Assistant (Contributor)',
     description:
       'Cockpit is an AI assistant that turns every call into action. It captures notes, enriches HubSpot, sends follow-ups, and coaches reps automatically. Beyond transcription, it delivers structured notes, HubSpot field autofill, embedded coaching, and AskAnything knowledge search.',
-    image: '/assets/ChatGPT Image May 14, 2026, 05_16_46 PM.png',
+    image: '/assets/project-cockpit.png',
     features: [
       'AI-powered note taking & transcription',
       'Automatic CRM enrichment (HubSpot)',
@@ -119,7 +119,7 @@ const projects = [
     subtitle: 'More Projects',
     description:
       'Feel free to check out my GitHub profile for more projects, experiments, and code samples that are not showcased here.',
-    image: '/assets/GitHub-logo.png',
+    image: '/assets/project-github-logo.png',
     features: [
       'Open-source projects',
       'Side projects & experiments',

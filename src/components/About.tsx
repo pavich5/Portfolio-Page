@@ -46,7 +46,7 @@ export function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-3xl blur-2xl opacity-20" />
               <ImageWithFallback
-                src="/assets/DSC_0774.JPEG"
+                src="/assets/antonio-about.jpeg"
                 alt="Antonio Pavic"
                 className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover"
               />
