@@ -17,7 +17,7 @@ const skillCategories = [
     icon: Server,
     color: 'from-emerald-500 to-green-500',
     skills: [
-      'Node.js', 'NestJS', 'Express', 'Rust', 
+      'Node.js', 'NestJS', 'Express', 'Rust', 'Deno',
       'GraphQL', 'Jest', 'Postman', 'API Design'
     ]
   },
