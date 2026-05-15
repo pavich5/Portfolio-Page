@@ -22,6 +22,11 @@ const projects = [
         label: 'Live Site',
         icon: ExternalLink,
         url: 'https://smartermin.com/'
+      },
+      {
+        label: 'GitHub',
+        icon: Github,
+        url: 'https://github.com/pavich5/SmartTermin'
       }
     ],
     gradient: 'from-pink-500 to-purple-500',
@@ -50,6 +55,11 @@ const projects = [
         label: 'Google Play',
         icon: Smartphone,
         url: 'https://play.google.com/store/apps/details?id=com.myapp.ridesharing&fbclid=PAZXh0bgNhZW0CMTEAAaa18tykzkcz52ww425FPbJe3pfEwkOz7C4uDckyyye3iSF51-xkTCKigZA_aem_dFY896izowfT-BTKbPqGIQ'
+      },
+      {
+        label: 'GitHub',
+        icon: Github,
+        url: 'https://github.com/pavich5/Moj-Prevoz'
       },
     ],
     gradient: 'from-blue-500 to-indigo-500',
