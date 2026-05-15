@@ -8,7 +8,7 @@ const projects = [
     title: 'Smart Termin',
     subtitle: 'SaaS Booking Platform',
     description:
-      'Smart Termin is a comprehensive SaaS booking platform designed for beauty professionals (barbers, nail technicians, lash artists, makeup artists, hair stylists) to manage appointments, clients, and business operations. It connects beauty professionals with clients through an automated booking system that handles scheduling, notifications, and business management.',
+      'Smart Termin is a SaaS booking platform for beauty professionals, including barbers, nail technicians, lash artists, makeup artists, and hair stylists. It helps businesses manage appointments, clients, portfolios, reviews, and daily operations through a clean automated booking flow.',
     image: '/assets/project-smart-termin.png',
     features: [
       'Automated appointment booking system',
@@ -31,7 +31,7 @@ const projects = [
     title: 'Moj Prevoz',
     subtitle: 'Mobile Application',
     description:
-      'Moj Prevoz is a comprehensive social-media-inspired ride-sharing platform designed for travelers and drivers in North Macedonia to share rides, find travel companions, and coordinate journeys efficiently. It connects drivers with passengers through an intuitive mobile interface that handles ride post creation, advanced filtering, live messaging with location sharing, and real-time trip coordination.',
+      'Moj Prevoz is a ride-sharing mobile app for drivers and travelers in North Macedonia. The app makes it easier to publish rides, find travel companions, filter routes, message in real time, share locations, and coordinate trips through a familiar mobile experience.',
     image: '/assets/project-moj-prevoz.png',
     features: [
       'Ride-sharing app for North Macedonia',
@@ -57,14 +57,14 @@ const projects = [
   },
   {
     title: 'Quarzo Life',
-    subtitle: 'Life insurance (Contributor)',
+    subtitle: 'Life Insurance Platform (Team Contributor)',
     description:
-      'Quarzo Life is a modern life insurance infrastructure platform in France that helps financial institutions, wealth managers, and fintechs distribute long-term savings and investment products digitally. It offers API integrations, ready-to-use customer journeys, real-time data, and automated operations for life insurance, retirement plans, capitalization contracts, and insured equity savings plans efficiently.',
+      'Quarzo Life is the product I am currently working on at Ludotech. It is a modern life insurance infrastructure platform in France that helps financial institutions, wealth managers, and fintechs distribute long-term savings and investment products digitally. I contribute as part of the engineering team, working on product features, integrations, and reliable user journeys.',
     image: '/assets/project-quarzo-life.png',
     features: [
-      'Native API integration or ready-to-use journeys',
-      'Real-time data',
-      'Zero operational friction'
+      'Digital life insurance infrastructure',
+      'API integrations and ready-to-use journeys',
+      'Real-time data and automated operations'
     ],
     links: [
       {
@@ -78,9 +78,9 @@ const projects = [
   },
   {
     title: 'Pabau',
-    subtitle: 'Healthcare Platform (Contributor)',
+    subtitle: 'Healthcare Platform (Team Contributor)',
     description:
-      'Pabau is an all-in-one practice management platform used by medical, aesthetics, and wellness clinics to manage appointments, patient records, staff workflows, marketing, and billing in one place. While not a personal side project, it is a product I significantly contributed to while working at the company.',
+      'Pabau is an all-in-one practice management platform for medical, aesthetics, and wellness clinics. I contributed as part of the Pabau engineering team, helping build and maintain features for appointments, patient records, staff workflows, marketing, billing, reporting, and CRM tools.',
     image: '/assets/project-pabau.jpg',
     features: [
       'All-in-one healthcare practice management',
@@ -97,9 +97,9 @@ const projects = [
   },
   {
     title: 'Cockpit',
-    subtitle: 'AI Assistant (Contributor)',
+    subtitle: 'AI Assistant (Team Contributor)',
     description:
-      'Cockpit is an AI assistant that turns every call into action. It captures notes, enriches HubSpot, sends follow-ups, and coaches reps automatically. Beyond transcription, it delivers structured notes, HubSpot field autofill, embedded coaching, and AskAnything knowledge search.',
+      'Cockpit is an AI assistant for sales teams that turns calls into structured actions. As a team contributor, I worked on features that support meeting notes, CRM enrichment, follow-up automation, coaching workflows, and knowledge search.',
     image: '/assets/project-cockpit.png',
     features: [
       'AI-powered note taking & transcription',
@@ -118,7 +118,7 @@ const projects = [
     title: 'GitHub',
     subtitle: 'More Projects',
     description:
-      'Feel free to check out my GitHub profile for more projects, experiments, and code samples that are not showcased here.',
+      'Explore my GitHub profile for additional projects, experiments, learning work, and code samples beyond the featured projects on this page.',
     image: '/assets/project-github-logo.png',
     features: [
       'Open-source projects',
@@ -153,7 +153,7 @@ export function Projects() {
           </div>
           <h2 className="text-gray-900 dark:text-white mb-4">Projects</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A selection of projects showcasing full-stack development, mobile apps, and modern web applications
+            Selected work across personal products and team-built platforms in SaaS, mobile, healthcare, insurance, and AI
           </p>
         </motion.div>
 

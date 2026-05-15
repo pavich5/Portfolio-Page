@@ -75,7 +75,7 @@ export function Hero() {
               transition={{ delay: 0.5 }}
               className="text-gray-600 dark:text-gray-400 max-w-xl"
             >
-              Software Engineer building clean, fast, and user-friendly apps — across frontend, backend, mobile, and full product development. Always learning, always shipping.
+              Full-stack engineer building polished, reliable software across web, mobile, backend, and AI-powered products. I care about clean architecture, thoughtful user experiences, and shipping work that holds up in production.
             </motion.p>
 
             <motion.div
@@ -90,7 +90,7 @@ export function Hero() {
                 onClick={() => scrollToSection('projects')}
                 className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-xl hover:shadow-lg hover:shadow-emerald-500/25 transition-all flex items-center gap-2"
               >
-                View My Projects
+                View Projects
                 <ArrowRight className="w-4 h-4" />
               </motion.button>
               
@@ -112,7 +112,7 @@ export function Hero() {
                 className="px-6 py-3 border-2 border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl hover:border-emerald-500 dark:hover:border-emerald-500 transition-all flex items-center gap-2"
               >
                 <Mail className="w-4 h-4" />
-                Contact Me
+                Get in Touch
               </motion.a>
             </motion.div>
 

@@ -63,7 +63,7 @@ export function Contact() {
           </div>
           <h2 className="text-gray-900 dark:text-white mb-4">Get In Touch</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? Feel free to reach out!
+            Have a role, project, or collaboration in mind? I would be happy to hear from you.
           </p>
         </motion.div>
 

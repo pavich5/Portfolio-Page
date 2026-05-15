@@ -56,7 +56,7 @@ export function Skills() {
           </div>
           <h2 className="text-gray-900 dark:text-white mb-4">Skills & Technologies</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A comprehensive toolkit for building modern, scalable applications
+            Technologies I use to build scalable interfaces, APIs, data models, and production-ready product features
           </p>
         </motion.div>
 

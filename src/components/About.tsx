@@ -31,7 +31,7 @@ export function About() {
           </div>
           <h2 className="text-gray-900 dark:text-white mb-4">About Me</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Passionate about building complete products from idea to deployment
+            I turn ideas into practical, well-built products from first concept to production
           </p>
         </motion.div>
 
@@ -62,10 +62,10 @@ export function About() {
           >
             <div className="prose dark:prose-invert">
               <p className="text-gray-600 dark:text-gray-400">
-                I'm <span className="text-gray-900 dark:text-white">Antonio</span>—a full-stack engineer from <span className="text-gray-900 dark:text-white">North Macedonia</span>. I love building complete products from idea to deployment. I've worked across frontend, backend, mobile, and AI-powered features.
+                I'm <span className="text-gray-900 dark:text-white">Antonio</span>, a full-stack software engineer from <span className="text-gray-900 dark:text-white">North Macedonia</span>. I enjoy building complete products: shaping the user experience, designing reliable APIs, connecting data, and bringing features all the way to production.
               </p>
               <p className="text-gray-600 dark:text-gray-400">
-                Passionate about learning new technologies like <span className="text-gray-900 dark:text-white">Rust</span>, system design, and AI automation. I value clean architecture, beautiful UI, and reliable systems.
+                My work spans frontend, backend, mobile, and AI-driven functionality. I'm especially interested in <span className="text-gray-900 dark:text-white">Rust</span>, system design, automation, and the kind of engineering decisions that make products easier to maintain as they grow.
               </p>
             </div>
 

@@ -40,7 +40,7 @@ export function Footer() {
               <span className="text-gray-900 dark:text-white">Antonio Pavic</span>
             </motion.div>
             <p className="text-gray-600 dark:text-gray-400 text-center md:text-left">
-              © {currentYear} Antonio Pavic — All Rights Reserved
+              © {currentYear} Antonio Pavic — Full-Stack Software Engineer
             </p>
           </div>
 

@@ -6,13 +6,13 @@ const experiences = [
     company: 'Ludotech',
     role: 'Software Engineer',
     period: '2025 – Present',
-    description: 'Working on Cockpit, an AI-powered platform for meeting summaries, CRM enrichment & insights',
+    description: 'Currently working on Quarzo Life, a digital life insurance infrastructure platform for financial institutions, wealth managers, and fintechs.',
     highlights: [
-      'Full-stack development using Rust, React, Next.js',
-      'Built Playbook module using OpenAI API',
-      'Strong focus on performance, testing, and architecture',
-      'Contributed to refactors improving maintainability',
-      'Agile development with senior engineers'
+      'Contributing to product features across Rust, React, and Next.js',
+      'Building reliable user flows, APIs, and integrations for financial products',
+      'Working with senior engineers on architecture, testing, and maintainability',
+      'Improving performance and code quality through focused refactors',
+      'Previously contributed to Cockpit, including AI-powered workflow features'
     ],
     color: 'from-purple-500 to-pink-500'
   },
@@ -20,13 +20,13 @@ const experiences = [
     company: 'Pabau',
     role: 'Software Engineer',
     period: '2023 – 2025',
-    description: 'Built features in a large healthcare monorepo using Next.js, NestJS, PostgreSQL',
+    description: 'Built and maintained features in a large healthcare SaaS platform using Next.js, NestJS, and PostgreSQL.',
     highlights: [
-      'Optimized database queries & APIs (30% improved performance)',
-      'Created reusable UI components + improved design system',
-      'Wrote unit & E2E tests with Jest + Playwright',
-      'Mentored interns, contributed to onboarding, handled complex tickets',
-      'DevOps with Docker, Jira, Bitbucket'
+      'Optimized database queries and APIs, improving performance by up to 30%',
+      'Created reusable UI components and strengthened design system consistency',
+      'Wrote unit and E2E tests with Jest and Playwright',
+      'Handled complex product tickets across frontend, backend, and data layers',
+      'Mentored interns and contributed to onboarding and team knowledge sharing'
     ],
     color: 'from-emerald-500 to-cyan-500'
   }
@@ -48,7 +48,7 @@ export function Experience() {
           </div>
           <h2 className="text-gray-900 dark:text-white mb-4">Work Experience</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Building impactful products and features across different domains
+            Product-focused engineering across healthcare, insurance, AI workflows, and modern SaaS platforms
           </p>
         </motion.div>
 
