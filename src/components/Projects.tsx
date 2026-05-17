@@ -125,6 +125,34 @@ const projects = [
     bgGradient: 'from-purple-500/10 to-pink-500/10'
   },
   {
+    title: 'Globetrotter',
+    subtitle: 'Travel Agency Platform',
+    description:
+      'Globetrotter is a full-stack travel booking platform for curated vacations, built to help users discover seasonal trips, compare destination offers, explore editorial travel stories, and book getaways through a cleaner, more premium digital experience.',
+    image: '/assets/project-globetrotter.png',
+    features: [
+      'Seasonal travel collections and destination discovery',
+      'Curated vacation packages with pricing and trip details',
+      'AI travel assistant for trip-related questions',
+      'Stripe-powered booking and checkout flow',
+      'Clerk authentication and booking email confirmations'
+    ],
+    links: [
+      {
+        label: 'Live Site',
+        icon: ExternalLink,
+        url: 'https://travel-agency-plum.vercel.app'
+      },
+      {
+        label: 'GitHub',
+        icon: Github,
+        url: 'https://github.com/pavich5/Travel-Agency'
+      }
+    ],
+    gradient: 'from-sky-500 to-teal-500',
+    bgGradient: 'from-sky-500/10 to-teal-500/10'
+  },
+  {
     title: 'GitHub',
     subtitle: 'More Projects',
     description:
