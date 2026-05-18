@@ -57,8 +57,8 @@ const projects = [
         url: 'https://github.com/pavich5/Travel-Agency'
       }
     ],
-    gradient: 'from-sky-500 to-teal-500',
-    bgGradient: 'from-sky-500/10 to-teal-500/10'
+    gradient: 'from-purple-500 to-pink-500',
+    bgGradient: 'from-purple-500/10 to-pink-500/10'
   },
   {
     title: 'Moj Prevoz',
@@ -200,13 +200,13 @@ export function Projects() {
             (() => {
               const isGlobetrotter = project.title === 'Globetrotter';
               const hoverBgClass = isGlobetrotter
-                ? 'from-sky-500/10 to-teal-500/10'
+                ? 'from-purple-500/10 to-pink-500/10'
                 : project.bgGradient;
               const badgeClass = isGlobetrotter
-                ? 'from-sky-500 to-teal-500'
+                ? 'from-purple-500 to-pink-500'
                 : project.gradient;
               const linkClass = isGlobetrotter
-                ? 'from-sky-500 to-teal-500'
+                ? 'from-purple-500 to-pink-500'
                 : project.gradient;
 
               return (
@@ -227,7 +227,7 @@ export function Projects() {
                 <div
                   className={`relative h-72 overflow-hidden ${
                     isGlobetrotter
-                      ? 'bg-gradient-to-br from-sky-50 via-cyan-50 to-teal-100 dark:from-slate-800 dark:via-sky-900/40 dark:to-teal-900/40'
+                      ? 'bg-gradient-to-br from-purple-50 via-pink-50 to-rose-100 dark:from-slate-800 dark:via-purple-900/40 dark:to-pink-900/40'
                       : ''
                   }`}
                 >
