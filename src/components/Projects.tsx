@@ -197,6 +197,19 @@ export function Projects() {
 
         <div className="projects-grid">
           {projects.map((project, index) => (
+            (() => {
+              const isGlobetrotter = project.title === 'Globetrotter';
+              const hoverBgClass = isGlobetrotter
+                ? 'from-sky-500/10 to-teal-500/10'
+                : project.bgGradient;
+              const badgeClass = isGlobetrotter
+                ? 'from-sky-500 to-teal-500'
+                : project.gradient;
+              const linkClass = isGlobetrotter
+                ? 'from-sky-500 to-teal-500'
+                : project.gradient;
+
+              return (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
@@ -207,13 +220,13 @@ export function Projects() {
               className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-200 dark:border-gray-700 overflow-hidden"
             >
               {/* Background Gradient */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${project.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+              <div className={`absolute inset-0 bg-gradient-to-br ${hoverBgClass} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
               
               <div className="relative z-10">
                 {/* Project Image */}
                 <div
                   className={`relative h-72 overflow-hidden ${
-                    project.title === 'Globetrotter'
+                    isGlobetrotter
                       ? 'bg-gradient-to-br from-sky-50 via-cyan-50 to-teal-100 dark:from-slate-800 dark:via-sky-900/40 dark:to-teal-900/40'
                       : ''
                   }`}
@@ -240,7 +253,7 @@ export function Projects() {
                 <div className="p-8">
                   {/* Header */}
                   <div className="mb-6">
-                    <div className={`inline-block px-3 py-1 rounded-full bg-gradient-to-r ${project.gradient} mb-3`}>
+                    <div className={`inline-block px-3 py-1 rounded-full bg-gradient-to-r ${badgeClass} mb-3`}>
                       <span className="text-white">{project.subtitle}</span>
                     </div>
                     <h3 className="text-gray-900 dark:text-white mb-2">{project.title}</h3>
@@ -257,7 +270,7 @@ export function Projects() {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className={`px-4 py-2 rounded-lg bg-gradient-to-r ${project.gradient} text-white flex items-center gap-2 hover:shadow-lg transition-all`}
+                        className={`px-4 py-2 rounded-lg bg-gradient-to-r ${linkClass} text-white flex items-center gap-2 hover:shadow-lg transition-all`}
                       >
                         <link.icon className="w-4 h-4" />
                         <span>{link.label}</span>
@@ -267,6 +280,8 @@ export function Projects() {
                 </div>
               </div>
             </motion.div>
+              );
+            })()
           ))}
         </div>
       </div>
