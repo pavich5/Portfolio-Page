@@ -104,7 +104,7 @@ export function Skills() {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { label: 'Years Experience', value: '2+' },
+            { label: 'Years Experience', value: '3.5+' },
             { label: 'Projects Completed', value: '5+' },
             { label: 'Technologies', value: '10+' },
             { label: 'Companies', value: '2' }
