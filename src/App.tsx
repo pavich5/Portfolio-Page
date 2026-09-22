@@ -11,12 +11,13 @@ import { Footer } from './components/Footer';
 export default function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
+      <div className="portfolio">
+        <a className="skip-link" href="#main-content">Skip to content</a>
         <Header />
-        <main>
+        <main id="main-content">
           <Hero />
-          <Experience />
           <Projects />
+          <Experience />
           <Skills />
           <About />
           <Contact />

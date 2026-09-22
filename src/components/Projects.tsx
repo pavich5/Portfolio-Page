@@ -1,289 +1,62 @@
-import { motion } from 'motion/react';
-import { ExternalLink, Github, Smartphone, Globe, Instagram } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
-import React from 'react';
-// Synced with root index.html projects section
-const projects = [
-  {
-    title: 'Smart Termin',
-    subtitle: 'SaaS Booking Platform',
-    description:
-      'Smart Termin is a SaaS booking platform for beauty professionals, including barbers, nail technicians, lash artists, makeup artists, and hair stylists. It helps businesses manage appointments, clients, portfolios, reviews, and daily operations through a clean automated booking flow.',
-    image: '/assets/project-smart-termin.png',
-    features: [
-      'Automated appointment booking system',
-      'Artist dashboard with calendar & analytics',
-      'Client directory with search & filters',
-      'Portfolio management & reviews',
-      'Subscription-based SaaS model'
-    ],
-    links: [
-      {
-        label: 'Live Site',
-        icon: ExternalLink,
-        url: 'https://smartermin.com/'
-      },
-      {
-        label: 'GitHub',
-        icon: Github,
-        url: 'https://github.com/pavich5/SmartTermin'
-      }
-    ],
-    gradient: 'from-pink-500 to-purple-500',
-    bgGradient: 'from-pink-500/10 to-purple-500/10'
-  },
-  {
-    title: 'Globetrotter',
-    subtitle: 'Travel Agency Platform',
-    description:
-      'Globetrotter is a full-stack travel booking platform for curated vacations, built to help users discover seasonal trips, compare destination offers, explore editorial travel stories, and book getaways through a cleaner, more premium digital experience.',
-    image: '/assets/project-globetrotter.png',
-    features: [
-      'Seasonal travel collections and destination discovery',
-      'Curated vacation packages with pricing and trip details',
-      'AI travel assistant for trip-related questions',
-      'Stripe-powered booking and checkout flow',
-      'Clerk authentication and booking email confirmations'
-    ],
-    links: [
-      {
-        label: 'Live Site',
-        icon: ExternalLink,
-        url: 'https://travel-agency-plum.vercel.app'
-      },
-      {
-        label: 'GitHub',
-        icon: Github,
-        url: 'https://github.com/pavich5/Travel-Agency'
-      }
-    ],
-    gradient: 'from-purple-500 to-pink-500',
-    bgGradient: 'from-purple-500/10 to-pink-500/10'
-  },
-  {
-    title: 'Moj Prevoz',
-    subtitle: 'Mobile Application',
-    description:
-      'Moj Prevoz is a ride-sharing mobile app for drivers and travelers in North Macedonia. The app makes it easier to publish rides, find travel companions, filter routes, message in real time, share locations, and coordinate trips through a familiar mobile experience.',
-    image: '/assets/project-moj-prevoz.png',
-    features: [
-      'Ride-sharing app for North Macedonia',
-      'Effortless ride post creation',
-      'Powerful search & filters',
-      'Live messaging with location sharing',
-      'Dark theme & intuitive UI'
-    ],
-    links: [
-      {
-        label: 'App Store',
-        icon: Smartphone,
-        url: 'https://apps.apple.com/mk/app/moj-prevoz/id6739589145'
-      },
-      {
-        label: 'Google Play',
-        icon: Smartphone,
-        url: 'https://play.google.com/store/apps/details?id=com.myapp.ridesharing&fbclid=PAZXh0bgNhZW0CMTEAAaa18tykzkcz52ww425FPbJe3pfEwkOz7C4uDckyyye3iSF51-xkTCKigZA_aem_dFY896izowfT-BTKbPqGIQ'
-      },
-      {
-        label: 'GitHub',
-        icon: Github,
-        url: 'https://github.com/pavich5/Moj-Prevoz'
-      },
-    ],
-    gradient: 'from-blue-500 to-indigo-500',
-    bgGradient: 'from-blue-500/10 to-indigo-500/10'
-  },
-  {
-    title: 'Quarzo Life',
-    subtitle: 'Life Insurance Platform (Team Contributor)',
-    description:
-      'Quarzo Life is the product I am currently working on at Ludotech. It is a modern life insurance infrastructure platform in France that helps financial institutions, wealth managers, and fintechs distribute long-term savings and investment products digitally. I contribute as part of the engineering team, working on product features, integrations, and reliable user journeys.',
-    image: '/assets/project-quarzo-life.png',
-    features: [
-      'Digital life insurance infrastructure',
-      'API integrations and ready-to-use journeys',
-      'Real-time data and automated operations'
-    ],
-    links: [
-      {
-        label: 'Live Site',
-        icon: ExternalLink,
-        url: 'https://www.quarzo-life.com/'
-      },
-    ],
-    gradient: 'from-orange-500 to-red-500',
-    bgGradient: 'from-orange-500/10 to-red-500/10'
-  },
-  {
-    title: 'Pabau',
-    subtitle: 'Healthcare Platform (Team Contributor)',
-    description:
-      'Pabau is an all-in-one practice management platform for medical, aesthetics, and wellness clinics. I contributed as part of the Pabau engineering team, helping build and maintain features for appointments, patient records, staff workflows, marketing, billing, reporting, and CRM tools.',
-    image: '/assets/project-pabau.jpg',
-    features: [
-      'All-in-one healthcare practice management',
-      'HIPAA-compliant patient data handling',
-      'Online bookings & automated reminders',
-      'Integrated forms, consents & invoicing',
-      'Reporting dashboards & CRM tools'
-    ],
-    links: [
-      { label: 'pabau.com', icon: ExternalLink, url: 'https://pabau.com/' }
-    ],
-    gradient: 'from-emerald-500 to-cyan-500',
-    bgGradient: 'from-emerald-500/10 to-cyan-500/10'
-  },
-  {
-    title: 'Cockpit',
-    subtitle: 'AI Assistant (Team Contributor)',
-    description:
-      'Cockpit is an AI assistant for sales teams that turns calls into structured actions. As a team contributor, I worked on features that support meeting notes, CRM enrichment, follow-up automation, coaching workflows, and knowledge search.',
-    image: '/assets/project-cockpit.png',
-    features: [
-      'AI-powered note taking & transcription',
-      'Automatic CRM enrichment (HubSpot)',
-      'Follow-up automation & coaching',
-      'AskAnything knowledge search',
-      'Customizable workflows for sales teams'
-    ],
-    links: [
-      { label: 'getcockpit.io', icon: ExternalLink, url: 'https://getcockpit.io/' }
-    ],
-    gradient: 'from-purple-500 to-pink-500',
-    bgGradient: 'from-purple-500/10 to-pink-500/10'
-  },
-  {
-    title: 'GitHub',
-    subtitle: 'More Projects',
-    description:
-      'Explore my GitHub profile for additional projects, experiments, learning work, and code samples beyond the featured projects on this page.',
-    image: '/assets/project-github-logo.png',
-    features: [
-      'Open-source projects',
-      'Side projects & experiments',
-      'Code samples & contributions'
-    ],
-    links: [
-      {
-        label: 'GitHub Profile',
-        icon: Github,
-        url: 'https://github.com/pavich5?tab=repositories'
-      }
-    ],
-    gradient: 'from-gray-700 to-gray-900',
-    bgGradient: 'from-gray-700/10 to-gray-900/10'
-  }
-];
+import { useState } from 'react';
+import { ArrowUpRight, Plus } from 'lucide-react';
+import { projects } from '../data/portfolio';
+import { SectionHeading } from './SectionHeading';
+
+const projectInfo: Record<string, { category: string; summary: string }> = {
+  'Smart Termin': { category: 'Web & SaaS', summary: 'Less admin. More appointments. A complete booking platform for beauty professionals.' },
+  'Globetrotter': { category: 'Web & SaaS', summary: 'A better way to get away. Curated travel, seamless bookings, and an AI travel assistant.' },
+  'Moj Prevoz': { category: 'Mobile', summary: 'Connecting drivers and travelers across North Macedonia, one shared ride at a time.' },
+  'Quarzo Life': { category: 'Web & SaaS', summary: 'Modern infrastructure for life insurance, built with the engineering team at Ludotech.' },
+  'Pabau': { category: 'Web & SaaS', summary: 'Helping healthcare teams do their best work with an all-in-one practice management platform.' },
+  'Cockpit': { category: 'AI', summary: 'Turning sales conversations into clear next steps with AI-powered notes and workflows.' },
+  'AP Motorworks': { category: 'Web & SaaS', summary: 'Explore, compare, and configure a Porsche 911. Save your build, share it, and make it yours.' },
+  'GitHub': { category: 'Open source', summary: 'More of what I’m building: open-source projects, experiments, and code worth sharing.' },
+};
+const work = projects;
+const filters = ['All work', 'Web & SaaS', 'Mobile', 'AI', 'Open source'];
 
 export function Projects() {
+  const [filter, setFilter] = useState('All work');
+  const visibleProjects = work.filter((project) => filter === 'All work' || projectInfo[project.title].category === filter);
   return (
-    <section id="projects" className="py-24 px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-4">
-            <Github className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-            <span className="text-emerald-600 dark:text-emerald-400">Featured Work</span>
-          </div>
-          <h2 className="text-gray-900 dark:text-white mb-4">Projects</h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Selected work across personal products and team-built platforms in SaaS, mobile, healthcare, insurance, and AI
-          </p>
-        </motion.div>
-
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            (() => {
-              const isGlobetrotter = project.title === 'Globetrotter';
-              const hoverBgClass = isGlobetrotter
-                ? 'from-purple-500/10 to-pink-500/10'
-                : project.bgGradient;
-              const badgeClass = isGlobetrotter
-                ? 'from-purple-500 to-pink-500'
-                : project.gradient;
-              const linkClass = isGlobetrotter
-                ? 'from-purple-500 to-pink-500'
-                : project.gradient;
-
-              return (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -8 }}
-              className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-200 dark:border-gray-700 overflow-hidden"
-            >
-              {/* Background Gradient */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${hoverBgClass} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-              
-              <div className="relative z-10">
-                {/* Project Image */}
-                <div
-                  className={`relative h-72 overflow-hidden ${
-                    isGlobetrotter
-                      ? 'bg-gradient-to-br from-purple-50 via-pink-50 to-rose-100 dark:from-slate-800 dark:via-purple-900/40 dark:to-pink-900/40'
-                      : ''
-                  }`}
-                >
-                  <ImageWithFallback
-                    src={project.image}
-                    alt={project.title}
-                    style={{ 
-                      objectPosition: ['Cockpit', 'Pabau', 'Quarzo Life'].includes(project.title)
-                        ? 'left center' 
-                        : project.title === 'Smart Termin'
-                        ? 'center center'
-                        : 'center center' 
-                    }}
-                    className={`h-full object-cover group-hover:scale-110 transition-transform duration-500 ${
-                      project.title === 'Smart Termin'
-                        ? 'w-[calc(100%-0.5rem)] ml-2 md:w-full md:ml-0'
-                        : 'w-full'
-                    }`}
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-20`} />
-                </div>
-
-                <div className="p-8">
-                  {/* Header */}
-                  <div className="mb-6">
-                    <div className={`inline-block px-3 py-1 rounded-full bg-gradient-to-r ${badgeClass} mb-3`}>
-                      <span className="text-white">{project.subtitle}</span>
-                    </div>
-                    <h3 className="text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                    <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
-                  </div>
-
-                  {/* Links */}
-                  <div className="flex flex-wrap gap-3">
-                    {project.links.map((link, idx) => (
-                      <motion.a
-                        key={idx}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className={`px-4 py-2 rounded-lg bg-gradient-to-r ${linkClass} text-white flex items-center gap-2 hover:shadow-lg transition-all`}
-                      >
-                        <link.icon className="w-4 h-4" />
-                        <span>{link.label}</span>
-                      </motion.a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-              );
-            })()
-          ))}
+    <section id="projects" className="section projects-section container" aria-label="Selected work">
+      <SectionHeading number="01" label="SELECTED WORK" title={<>Built to make<br />a difference<span className="accent-period">.</span></>}>
+        <p>A selection of personal products and team contributions. Real problems, thoughtful solutions.</p>
+      </SectionHeading>
+      <div className="project-toolbar">
+        <div className="project-filters" role="group" aria-label="Filter projects">
+          {filters.map((item) => <button key={item} onClick={() => setFilter(item)} className={filter === item ? 'filter active' : 'filter'} aria-pressed={filter === item} aria-controls="project-grid">{item}{item === 'All work' && <span aria-hidden="true">{work.length.toString().padStart(2, '0')}</span>}</button>)}
         </div>
+        <span className="mono project-count" role="status">{visibleProjects.length.toString().padStart(2, '0')} PROJECTS</span>
+      </div>
+      <div id="project-grid" className="project-grid">
+        {visibleProjects.map((project) => (
+          <article className="project-card" key={project.title}>
+            <a className="project-image-link" href={project.links[0].url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${project.title} (opens in a new tab)`}>
+              <img
+                src={project.image.replace(/\.[^.]+$/, '-1440.webp')}
+                srcSet={`${project.image.replace(/\.[^.]+$/, '-720.webp')} 720w, ${project.image.replace(/\.[^.]+$/, '-1440.webp')} 1440w`}
+                sizes="(max-width: 360px) calc(100vw - 32px), (max-width: 600px) calc(100vw - 40px), (max-width: 800px) calc((100vw - 76px) / 2), (max-width: 1023px) calc((100vw - 100px) / 2), (max-width: 1100px) calc((100vw - 132px) / 4), (max-width: 1392px) calc((100vw - 172px) / 4), 305px"
+                alt={`${project.title} — ${project.subtitle}`}
+                loading="lazy"
+                decoding="async"
+                width="1536"
+                height="1024"
+              />
+              <span className="project-category">{projectInfo[project.title].category}</span>
+              <span className="project-image-arrow"><ArrowUpRight size={21} /></span>
+            </a>
+            <div className="project-title-row"><h3>{project.title}</h3><span className="mono project-index">/{(work.indexOf(project) + 1).toString().padStart(2, '0')}</span></div>
+            <p className="project-subtitle">{project.subtitle}</p>
+            <p className="project-summary">{projectInfo[project.title].summary}</p>
+            <details className="project-details">
+              <summary>About the project <Plus size={16} /></summary>
+              <div className="project-details-content"><p>{project.description}</p><ul>{project.features.map((feature) => <li key={feature}>{feature}</li>)}</ul></div>
+            </details>
+            <div className="project-links">{project.links.map((link) => <a href={link.url} key={link.url} target="_blank" rel="noopener noreferrer"><link.icon size={14} />{link.label}<ArrowUpRight size={13} /></a>)}</div>
+          </article>
+        ))}
       </div>
     </section>
   );

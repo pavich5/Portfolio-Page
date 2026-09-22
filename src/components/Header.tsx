@@ -1,62 +1,82 @@
-import { Moon, Sun } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { ArrowUpRight, Menu, Moon, Sun, X } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-import { motion } from 'motion/react';
+
+const navigation = [
+  { id: 'projects', label: 'Work' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'skills', label: 'Toolkit' },
+  { id: 'about', label: 'About' },
+];
 
 export function Header() {
   const { theme, toggleTheme } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
+  const menuButton = useRef<HTMLButtonElement>(null);
+  const header = useRef<HTMLElement>(null);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) setActiveSection(entry.target.id);
+      });
+    }, { rootMargin: '-15% 0px -60% 0px' });
+    document.querySelectorAll('main section[id]').forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setMenuOpen(false);
+        menuButton.current?.focus();
+      }
+    };
+    const closeOutside = (event: PointerEvent) => {
+      if (!header.current?.contains(event.target as Node)) setMenuOpen(false);
+    };
+    const desktop = window.matchMedia('(min-width: 801px)');
+    const closeOnDesktop = () => { if (desktop.matches) setMenuOpen(false); };
+    document.addEventListener('keydown', closeOnEscape);
+    document.addEventListener('pointerdown', closeOutside);
+    desktop.addEventListener('change', closeOnDesktop);
+    return () => {
+      document.removeEventListener('keydown', closeOnEscape);
+      document.removeEventListener('pointerdown', closeOutside);
+      desktop.removeEventListener('change', closeOnDesktop);
+    };
+  }, [menuOpen]);
 
   return (
-    <motion.header 
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800"
-    >
-      <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
-        <motion.div 
-          whileHover={{ scale: 1.05 }}
-          className="flex items-center gap-2 cursor-pointer"
-          onClick={() => scrollToSection('home')}
-        >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center">
-            <span className="text-white">AP</span>
-          </div>
-          <span className="text-gray-900 dark:text-white hidden sm:block">Antonio Pavic</span>
-        </motion.div>
-
-        <div className="flex items-center gap-8">
-          <div className="hidden md:flex items-center gap-6">
-            {['home', 'experience', 'projects', 'skills', 'about', 'contact'].map((item) => (
-              <button
-                key={item}
-                onClick={() => scrollToSection(item)}
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors capitalize"
-              >
-                {item}
-              </button>
-            ))}
-          </div>
-
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={toggleTheme}
-            className="w-10 h-10 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-          >
-            {theme === 'dark' ? (
-              <Sun className="w-5 h-5 text-yellow-500" />
-            ) : (
-              <Moon className="w-5 h-5 text-gray-700" />
-            )}
-          </motion.button>
+    <header className="site-header" ref={header}>
+      <div className="container header-inner">
+        <a href="#home" className="wordmark" aria-label="Antonio Pavic, home" onClick={() => setMenuOpen(false)}>
+          Antonio<span className="wordmark-surname">&nbsp;Pavic</span>
+        </a>
+        <nav className="desktop-nav" aria-label="Main navigation">
+          {navigation.map((item) => (
+            <a key={item.id} href={`#${item.id}`} aria-current={activeSection === item.id ? 'location' : undefined}>{item.label}</a>
+          ))}
+        </nav>
+        <div className="header-actions">
+          <button className="icon-button theme-toggle" onClick={toggleTheme} aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}>
+            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+          </button>
+          <a href="#contact" className="button button-small header-contact">Let’s talk <ArrowUpRight size={16} /></a>
+          <button ref={menuButton} className="icon-button menu-toggle" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} aria-controls="mobile-navigation" onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? <X size={23} /> : <Menu size={23} />}
+          </button>
         </div>
+      </div>
+      <nav id="mobile-navigation" className="mobile-nav" aria-label="Mobile navigation" hidden={!menuOpen}>
+        {[...navigation, { id: 'contact', label: 'Let’s talk' }].map((item, index) => (
+          <a key={item.id} href={`#${item.id}`} onClick={() => setMenuOpen(false)} aria-current={activeSection === item.id ? 'location' : undefined}>
+            <span className="mono">0{index + 1}</span>{item.label}<ArrowUpRight size={20} />
+          </a>
+        ))}
       </nav>
-    </motion.header>
+    </header>
   );
 }

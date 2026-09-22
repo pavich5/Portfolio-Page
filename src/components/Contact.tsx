@@ -1,179 +1,32 @@
-import { motion } from 'motion/react';
-import { Mail, Github, Linkedin, Send, MapPin } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { ArrowUpRight, Check, Copy, Github, Linkedin } from 'lucide-react';
+
+const email = 'antoniopavic.dev@gmail.com';
 
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [copyStatus, setCopyStatus] = useState<'idle' | 'copied' | 'error'>('idle');
+  const resetTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  useEffect(() => () => clearTimeout(resetTimer.current), []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    alert('Message sent! (This is a demo)');
-    setFormData({ name: '', email: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const contactLinks = [
-    {
-      icon: Mail,
-      label: 'Email',
-      value: 'antoniopavic.dev@gmail.com',
-      href: 'mailto:antoniopavic.dev@gmail.com',
-      color: 'from-red-500 to-orange-500'
-    },
-    {
-      icon: Github,
-      label: 'GitHub',
-      value: 'github.com/pavich5',
-      href: 'https://github.com/pavich5',
-      color: 'from-gray-700 to-gray-900'
-    },
-    {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      value: 'antonio-pavic',
-      href: 'https://www.linkedin.com/in/antonio-pavic/',
-      color: 'from-blue-600 to-blue-700'
+  async function copyEmail() {
+    clearTimeout(resetTimer.current);
+    try {
+      await navigator.clipboard.writeText(email);
+      setCopyStatus('copied');
+    } catch {
+      setCopyStatus('error');
     }
-  ];
+    resetTimer.current = setTimeout(() => setCopyStatus('idle'), 3500);
+  }
 
   return (
-    <section id="contact" className="py-24 px-6 lg:px-8 bg-gray-50 dark:bg-gray-900/50">
-      <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-4">
-            <Mail className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-            <span className="text-emerald-600 dark:text-emerald-400">Let's Connect</span>
-          </div>
-          <h2 className="text-gray-900 dark:text-white mb-4">Get In Touch</h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Have a role, project, or collaboration in mind? I would be happy to hear from you.
-          </p>
-        </motion.div>
-
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700"
-          >
-            <h3 className="text-gray-900 dark:text-white mb-6">Send a Message</h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"
-                  placeholder="Your name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={6}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all resize-none"
-                  placeholder="Your message..."
-                />
-              </div>
-
-              <motion.button
-                type="submit"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full px-6 py-4 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-xl hover:shadow-lg hover:shadow-emerald-500/25 transition-all flex items-center justify-center gap-2"
-              >
-                <Send className="w-5 h-5" />
-                Send Message
-              </motion.button>
-            </form>
-          </motion.div>
-
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
-              <h3 className="text-gray-900 dark:text-white mb-6">Contact Information</h3>
-              
-              <div className="space-y-4">
-                {contactLinks.map((contact, index) => (
-                  <motion.a
-                    key={contact.label}
-                    href={contact.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    whileHover={{ x: 5 }}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-all border border-gray-200 dark:border-gray-600"
-                  >
-                    <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${contact.color} flex items-center justify-center flex-shrink-0`}>
-                      <contact.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="text-gray-600 dark:text-gray-400">{contact.label}</div>
-                      <div className="text-gray-900 dark:text-white truncate">{contact.value}</div>
-                    </div>
-                  </motion.a>
-                ))}
-              </div>
-            </div>
-          </motion.div>
+    <section id="contact" className="contact-section" aria-labelledby="contact-title">
+      <div className="container">
+        <div className="contact-top"><p className="eyebrow"><span className="section-number">05</span> NEXT STARTS WITH A CONVERSATION</p><span className="contact-star" aria-hidden="true">✳</span></div>
+        <div className="contact-main"><h2 id="contact-title">Have something<br />in mind? <span>Let’s build it.</span></h2><a className="contact-arrow" href={`mailto:${email}`} aria-label="Email Antonio to discuss a project"><ArrowUpRight strokeWidth={1} /></a></div>
+        <div className="contact-bottom">
+          <div><p>Have a role, project, or collaboration in mind?<br />I’d be happy to hear from you.</p><div className="email-row"><a href={`mailto:${email}`}>{email}</a><button className="copy-button" onClick={copyEmail} aria-label={copyStatus === 'copied' ? 'Email address copied' : 'Copy email address'}>{copyStatus === 'copied' ? <Check size={17} /> : <Copy size={17} />}</button></div><p className="copy-status" role="status">{copyStatus === 'copied' ? 'Email copied to clipboard.' : copyStatus === 'error' ? 'Select the email address to copy it, or click to open your email app.' : ''}</p></div>
+          <div className="contact-socials"><a href="https://github.com/pavich5" target="_blank" rel="noopener noreferrer"><Github size={17} />GitHub<ArrowUpRight size={17} /></a><a href="https://www.linkedin.com/in/antonio-pavic/" target="_blank" rel="noopener noreferrer"><Linkedin size={17} />LinkedIn<ArrowUpRight size={17} /></a></div>
         </div>
       </div>
     </section>
