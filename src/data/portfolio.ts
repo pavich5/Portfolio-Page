@@ -6,7 +6,7 @@ export const projects = [
     title: 'Smart Termin',
     subtitle: 'SaaS Booking Platform',
     description:
-      'Smart Termin is a SaaS booking platform for beauty professionals, including barbers, nail technicians, lash artists, makeup artists, and hair stylists. It helps businesses manage appointments, clients, portfolios, reviews, and daily operations through a clean automated booking flow.',
+      'Smart Termin is a personal SaaS booking platform I built for beauty professionals. I focused on the React frontend and MySQL database, creating workflows for appointment scheduling, client management, portfolios, reviews, and business analytics.',
     image: '/assets/project-smart-termin.png',
     features: [
       'Automated appointment booking system',
@@ -37,7 +37,7 @@ export const projects = [
     title: 'Moj Prevoz',
     subtitle: 'Mobile Application',
     description:
-      'Moj Prevoz is a ride-sharing mobile app for drivers and travelers in North Macedonia. The app makes it easier to publish rides, find travel companions, filter routes, message in real time, share locations, and coordinate trips through a familiar mobile experience. It was successfully released on both the Apple App Store and Google Play Store, but was later taken down for business reasons.',
+      'Moj Prevoz is a React Native ride-sharing app I built for drivers and travelers in North Macedonia. I focused on the frontend and database, including ride publishing and search, live messaging, and location sharing, and supported deployment of its C# backend on Azure. The app was released on the Apple App Store and Google Play before being taken down for business reasons.',
     image: '/assets/project-moj-prevoz.png',
     features: [
       'Ride-sharing app for North Macedonia',
@@ -68,7 +68,7 @@ export const projects = [
     title: 'Globetrotter',
     subtitle: 'Travel Agency Platform',
     description:
-      'Globetrotter is a full-stack travel booking platform for curated vacations, designed to make discovering and booking memorable getaways feel effortless. Users can explore seasonal destinations, compare detailed travel offers, read editorial stories, and get help from an AI travel assistant. The platform also includes secure user authentication powered by Clerk and a streamlined Stripe payment flow for completing bookings.',
+      'Globetrotter is a personal full-stack travel booking platform for discovering seasonal destinations, comparing vacation packages, reading travel stories, and completing bookings. I integrated Clerk for user authentication, Stripe for payments, an AI travel assistant, and email confirmations for the booking flow.',
     image: '/assets/project-globetrotter.png',
     features: [
       'Seasonal travel collections and destination discovery',
@@ -94,7 +94,7 @@ export const projects = [
     title: 'AP Motorworks',
     subtitle: 'Porsche 911 Showroom & Configurator',
     description:
-      'AP Motorworks is an independent Porsche 911 concept experience built with React 19, TypeScript, Vite, React Router, and Motion. It combines a cinematic showroom, individual Carrera, Carrera GTS, and GT3 pages, side-by-side model comparisons, and an interactive Carrera GTS configurator. Configurations can be saved in a browser-local garage, shared through URLs, and exported as high-resolution PNG build cards. This frontend design study uses illustrative pricing and is not affiliated with or endorsed by Porsche.',
+      'AP Motorworks is a personal frontend design study built with React 19, TypeScript, Vite, React Router, and Motion. I created a Porsche 911 concept showroom with model pages, side-by-side comparisons, and an interactive Carrera GTS configurator whose builds can be saved locally, shared by URL, and exported as high-resolution PNG cards. It uses illustrative pricing and is not affiliated with or endorsed by Porsche.',
     image: '/assets/project-ap-motorworks.png',
     features: [
       'Cinematic showroom, model filters, and individual 911 model pages',
@@ -114,12 +114,14 @@ export const projects = [
     title: 'Quarzo Life',
     subtitle: 'Life Insurance Platform (Team Contributor)',
     description:
-      'Quarzo Life is the product I am currently working on at Ludotech. Built specifically for the French life-insurance market, it is a modern infrastructure platform that enables financial institutions, wealth managers, and fintechs across France to distribute long-term savings and investment products digitally. I contribute as part of the engineering team, developing product features, integrations, and reliable user journeys.',
+      'At Ludotech, I contribute to Quarzo Life, a digital life-insurance infrastructure platform for the French market. My work includes death-settlement flows for insured individuals and beneficiary clauses, broker authorization and policy eligibility checks, and scheduling one-off and recurring premium contributions. I have also implemented AES-256-GCM encryption with Vault-managed keys and HMAC-SHA-256 hashing for secure IBAN matching and GDPR-focused data protection.',
     image: '/assets/project-quarzo-life.png',
     features: [
-      'Digital life insurance infrastructure',
-      'API integrations and ready-to-use journeys',
-      'Real-time data and automated operations'
+      'Death-settlement and beneficiary-clause workflows',
+      'Broker authorization and policy eligibility checks',
+      'One-off and recurring premium scheduling',
+      'AES-256-GCM encryption with Vault-managed keys',
+      'HMAC-SHA-256 hashing for secure IBAN matching'
     ],
     links: [
       {
@@ -133,14 +135,14 @@ export const projects = [
     title: 'Pabau',
     subtitle: 'Healthcare Platform (Team Contributor)',
     description:
-      'Pabau is an all-in-one practice management platform for medical, aesthetics, and wellness clinics. I contributed as part of the Pabau engineering team, helping build and maintain features for appointments, patient records, staff workflows, marketing, billing, reporting, and CRM tools.',
+      'From 2023 to 2025, I worked on Pabau, a healthcare practice-management platform for clinics. I optimized a PostgreSQL chart query over five million rows from 60 seconds to 3 seconds, built Excel and CSV report exports with Amazon S3 downloads, and maintained unit and Playwright end-to-end tests to prevent regressions.',
     image: '/assets/project-pabau.jpg',
     features: [
-      'All-in-one healthcare practice management',
-      'HIPAA-compliant patient data handling',
-      'Online bookings & automated reminders',
-      'Integrated forms, consents & invoicing',
-      'Reporting dashboards & CRM tools'
+      'PostgreSQL query optimization across five million rows',
+      'Chart query runtime reduced from 60 seconds to 3 seconds',
+      'Excel and CSV exports for clinic reports',
+      'Report downloads through Amazon S3',
+      'Unit and Playwright end-to-end testing'
     ],
     links: [
       { label: 'pabau.com', icon: ExternalLink, url: 'https://pabau.com/' }
@@ -150,14 +152,14 @@ export const projects = [
     title: 'Cockpit',
     subtitle: 'AI Assistant (Team Contributor)',
     description:
-      'Cockpit is an AI assistant for sales teams that turns calls into structured actions. As a team contributor, I worked on features that support meeting notes, CRM enrichment, follow-up automation, coaching workflows, and knowledge search.',
+      'At Ludotech, I contributed to Cockpit, an AI-powered CRM and meeting-intelligence product. I built GPT-powered Playbooks that detect user-defined meeting topics and generate summaries, developed meeting video-player and transcript features with Rust and HTML, and helped migrate the product from HTMX to React while adding real-time updates with ElectricSQL.',
     image: '/assets/project-cockpit.png',
     features: [
-      'AI-powered note taking & transcription',
-      'Automatic CRM enrichment (HubSpot)',
-      'Follow-up automation & coaching',
-      'AskAnything knowledge search',
-      'Customizable workflows for sales teams'
+      'GPT-powered Playbooks and meeting summaries',
+      'User-defined meeting-topic detection',
+      'Meeting video-player and transcript features',
+      'V2 migration from HTMX to React',
+      'Real-time updates with ElectricSQL'
     ],
     links: [
       { label: 'getcockpit.io', icon: ExternalLink, url: 'https://getcockpit.io/' }
@@ -189,26 +191,25 @@ export const experiences = [
     company: 'Ludotech',
     role: 'Software Engineer',
     period: '2025 – Present',
-    description: 'Currently working on Quarzo Life, a digital life insurance infrastructure platform for financial institutions, wealth managers, and fintechs.',
+    description: 'Building financial workflows for Quarzo Life, a life-insurance infrastructure platform for the French market, after contributing to Cockpit, an AI-powered CRM and meeting-intelligence product.',
     highlights: [
-      'Contributing to product features across Rust, React, and Next.js',
-      'Building reliable user flows, APIs, and integrations for financial products',
-      'Working with senior engineers on architecture, testing, and maintainability',
-      'Improving performance and code quality through focused refactors',
-      'Previously contributed to Cockpit, including AI-powered workflow features'
+      'Built death-settlement and beneficiary-clause workflows with broker authorization and policy eligibility checks',
+      'Contributed to one-off and recurring premium scheduling and payment-state tracking',
+      'Implemented AES-256-GCM encryption and HMAC-SHA-256 hashing with Vault-managed keys',
+      'Built GPT-powered Cockpit Playbooks, meeting summaries, and transcript features',
+      'Contributed to Cockpit’s HTMX-to-React migration and ElectricSQL real-time updates'
     ],
   },
   {
     company: 'Pabau',
     role: 'Software Engineer',
     period: '2023 – 2025',
-    description: 'Built and maintained features in a large healthcare SaaS platform using Next.js, NestJS, and PostgreSQL.',
+    description: 'Built and maintained reporting, data, and quality-focused features for a healthcare practice-management platform.',
     highlights: [
-      'Optimized database queries and APIs, improving performance by up to 30%',
-      'Created reusable UI components and strengthened design system consistency',
-      'Wrote unit and E2E tests with Jest and Playwright',
-      'Handled complex product tickets across frontend, backend, and data layers',
-      'Mentored interns and contributed to onboarding and team knowledge sharing'
+      'Reduced a PostgreSQL chart query over five million rows from 60 seconds to 3 seconds',
+      'Built Excel and CSV exports for stock, pricing, item, and chart reports',
+      'Implemented report downloads through Amazon S3',
+      'Built and maintained unit and Playwright end-to-end tests to prevent regressions'
     ],
   }
 ];
