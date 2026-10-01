@@ -191,7 +191,7 @@ export const experiences = [
     company: 'Ludotech',
     role: 'Software Engineer',
     period: '2025 – Present',
-    description: 'Building financial workflows for Quarzo Life, a life-insurance infrastructure platform for the French market, after contributing to Cockpit, an AI-powered CRM and meeting-intelligence product.',
+    description: 'Helped build financial workflows for Quarzo Life, a life-insurance infrastructure platform for the French market, after contributing to Cockpit, an AI-powered CRM and meeting-intelligence product.',
     highlights: [
       'Built death-settlement and beneficiary-clause workflows with broker authorization and policy eligibility checks',
       'Contributed to one-off and recurring premium scheduling and payment-state tracking',
@@ -207,8 +207,7 @@ export const experiences = [
     description: 'Built and maintained reporting, data, and quality-focused features for a healthcare practice-management platform.',
     highlights: [
       'Reduced a PostgreSQL chart query over five million rows from 60 seconds to 3 seconds',
-      'Built Excel and CSV exports for stock, pricing, item, and chart reports',
-      'Implemented report downloads through Amazon S3',
+      'Implemented Excel and CSV exports for stock, pricing, item, and chart reports, with downloads through Amazon S3',
       'Built and maintained unit and Playwright end-to-end tests to prevent regressions'
     ],
   }

@@ -4,13 +4,13 @@ import { projects } from '../data/portfolio';
 import { SectionHeading } from './SectionHeading';
 
 const projectInfo: Record<string, { category: string; summary: string }> = {
-  'Smart Termin': { category: 'Web & SaaS', summary: 'A React and MySQL booking platform I built for beauty professionals, with scheduling, client management, and analytics.' },
-  'Globetrotter': { category: 'Web & SaaS', summary: 'A full-stack travel platform I built with curated trips, Clerk authentication, Stripe payments, and an AI assistant.' },
-  'Moj Prevoz': { category: 'Mobile', summary: 'A React Native ride-sharing app I built with live messaging, location sharing, and a C# backend deployed on Azure.' },
-  'Quarzo Life': { category: 'Web & SaaS', summary: 'French life-insurance workflows spanning settlement, premium scheduling, and secure financial-data handling.' },
-  'Pabau': { category: 'Web & SaaS', summary: 'Healthcare platform work focused on PostgreSQL performance, clinic-report exports, and automated testing.' },
-  'Cockpit': { category: 'AI', summary: 'AI meeting intelligence work spanning GPT Playbooks, transcripts, React migration, and real-time updates.' },
-  'AP Motorworks': { category: 'Web & SaaS', summary: 'A React and TypeScript Porsche 911 concept showroom with model comparisons and a shareable configurator.' },
+  'Smart Termin': { category: 'Web & SaaS', summary: 'Less admin. More appointments. A complete booking platform for beauty professionals.' },
+  'Globetrotter': { category: 'Web & SaaS', summary: 'A full-stack travel platform with curated trips, Clerk authentication, and secure Stripe payments.' },
+  'Moj Prevoz': { category: 'Mobile', summary: 'A North Macedonian ride-sharing app released on the App Store and Google Play, then removed for business reasons.' },
+  'Quarzo Life': { category: 'Web & SaaS', summary: 'Modern life-insurance infrastructure built for the French market with the engineering team at Ludotech.' },
+  'Pabau': { category: 'Web & SaaS', summary: 'Helping healthcare teams do their best work with an all-in-one practice management platform.' },
+  'Cockpit': { category: 'AI', summary: 'Turning sales conversations into clear next steps with AI-powered notes and workflows.' },
+  'AP Motorworks': { category: 'Web & SaaS', summary: 'Explore, compare, and configure a Porsche 911. Save your build, share it, and make it yours.' },
   'GitHub': { category: 'Open source', summary: 'More of what I’m building: open-source projects, experiments, and code worth sharing.' },
 };
 const work = projects;
