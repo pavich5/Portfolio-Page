@@ -37,7 +37,7 @@ export const projects = [
     title: 'Moj Prevoz',
     subtitle: 'Mobile Application',
     description:
-      'Moj Prevoz is a ride-sharing mobile app for drivers and travelers in North Macedonia. The app makes it easier to publish rides, find travel companions, filter routes, message in real time, share locations, and coordinate trips through a familiar mobile experience.',
+      'Moj Prevoz is a ride-sharing mobile app for drivers and travelers in North Macedonia. The app makes it easier to publish rides, find travel companions, filter routes, message in real time, share locations, and coordinate trips through a familiar mobile experience. It was successfully released on both the Apple App Store and Google Play Store, but was later taken down for business reasons.',
     image: '/assets/project-moj-prevoz.png',
     features: [
       'Ride-sharing app for North Macedonia',
@@ -65,30 +65,10 @@ export const projects = [
     ],
   },
   {
-    title: 'AP Motorworks',
-    subtitle: 'Porsche 911 Showroom & Configurator',
-    description:
-      'AP Motorworks is an independent Porsche 911 concept experience built with React 19, TypeScript, Vite, React Router, and Motion. It combines a cinematic showroom, individual Carrera, Carrera GTS, and GT3 pages, side-by-side model comparisons, and an interactive Carrera GTS configurator. Configurations can be saved in a browser-local garage, shared through URLs, and exported as high-resolution PNG build cards. This frontend design study uses illustrative pricing and is not affiliated with or endorsed by Porsche.',
-    image: '/assets/project-ap-motorworks.png',
-    features: [
-      'Cinematic showroom, model filters, and individual 911 model pages',
-      'Side-by-side model comparison with a differences-only view',
-      'Six paints, two wheel designs, three exterior views, two interiors, and four equipment options',
-      '36 exterior render combinations with illustrative price estimates',
-      'Browser-local garage with named builds, editing, and draft recovery',
-      'Shareable configuration URLs and high-resolution PNG build-card exports',
-      'Responsive layout, keyboard controls, and reduced-motion support'
-    ],
-    links: [
-      { label: 'Live Site', icon: ExternalLink, url: 'https://ap-motorworks.vercel.app/' },
-      { label: 'GitHub', icon: Github, url: 'https://github.com/pavich5/ap-motorworks' }
-    ],
-  },
-  {
     title: 'Globetrotter',
     subtitle: 'Travel Agency Platform',
     description:
-      'Globetrotter is a full-stack travel booking platform for curated vacations, built to help users discover seasonal trips, compare destination offers, explore editorial travel stories, and book getaways through a cleaner, more premium digital experience.',
+      'Globetrotter is a full-stack travel booking platform for curated vacations, designed to make discovering and booking memorable getaways feel effortless. Users can explore seasonal destinations, compare detailed travel offers, read editorial stories, and get help from an AI travel assistant. The platform also includes secure user authentication powered by Clerk and a streamlined Stripe payment flow for completing bookings.',
     image: '/assets/project-globetrotter.png',
     features: [
       'Seasonal travel collections and destination discovery',
@@ -111,10 +91,30 @@ export const projects = [
     ],
   },
   {
+    title: 'AP Motorworks',
+    subtitle: 'Porsche 911 Showroom & Configurator',
+    description:
+      'AP Motorworks is an independent Porsche 911 concept experience built with React 19, TypeScript, Vite, React Router, and Motion. It combines a cinematic showroom, individual Carrera, Carrera GTS, and GT3 pages, side-by-side model comparisons, and an interactive Carrera GTS configurator. Configurations can be saved in a browser-local garage, shared through URLs, and exported as high-resolution PNG build cards. This frontend design study uses illustrative pricing and is not affiliated with or endorsed by Porsche.',
+    image: '/assets/project-ap-motorworks.png',
+    features: [
+      'Cinematic showroom, model filters, and individual 911 model pages',
+      'Side-by-side model comparison with a differences-only view',
+      'Six paints, two wheel designs, three exterior views, two interiors, and four equipment options',
+      '36 exterior render combinations with illustrative price estimates',
+      'Browser-local garage with named builds, editing, and draft recovery',
+      'Shareable configuration URLs and high-resolution PNG build-card exports',
+      'Responsive layout, keyboard controls, and reduced-motion support'
+    ],
+    links: [
+      { label: 'Live Site', icon: ExternalLink, url: 'https://ap-motorworks.vercel.app/' },
+      { label: 'GitHub', icon: Github, url: 'https://github.com/pavich5/ap-motorworks' }
+    ],
+  },
+  {
     title: 'Quarzo Life',
     subtitle: 'Life Insurance Platform (Team Contributor)',
     description:
-      'Quarzo Life is the product I am currently working on at Ludotech. It is a modern life insurance infrastructure platform in France that helps financial institutions, wealth managers, and fintechs distribute long-term savings and investment products digitally. I contribute as part of the engineering team, working on product features, integrations, and reliable user journeys.',
+      'Quarzo Life is the product I am currently working on at Ludotech. Built specifically for the French life-insurance market, it is a modern infrastructure platform that enables financial institutions, wealth managers, and fintechs across France to distribute long-term savings and investment products digitally. I contribute as part of the engineering team, developing product features, integrations, and reliable user journeys.',
     image: '/assets/project-quarzo-life.png',
     features: [
       'Digital life insurance infrastructure',
