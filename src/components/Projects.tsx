@@ -5,9 +5,9 @@ import { SectionHeading } from './SectionHeading';
 
 const projectInfo: Record<string, { category: string; summary: string }> = {
   'Smart Termin': { category: 'Web & SaaS', summary: 'Less admin. More appointments. A complete booking platform for beauty professionals.' },
-  'Globetrotter': { category: 'Web & SaaS', summary: 'A better way to get away. Curated travel, seamless bookings, and an AI travel assistant.' },
-  'Moj Prevoz': { category: 'Mobile', summary: 'Connecting drivers and travelers across North Macedonia, one shared ride at a time.' },
-  'Quarzo Life': { category: 'Web & SaaS', summary: 'Modern infrastructure for life insurance, built with the engineering team at Ludotech.' },
+  'Globetrotter': { category: 'Web & SaaS', summary: 'A full-stack travel platform with curated trips, Clerk authentication, and secure Stripe payments.' },
+  'Moj Prevoz': { category: 'Mobile', summary: 'A North Macedonian ride-sharing app released on the App Store and Google Play, then removed for business reasons.' },
+  'Quarzo Life': { category: 'Web & SaaS', summary: 'Modern life-insurance infrastructure built for the French market with the engineering team at Ludotech.' },
   'Pabau': { category: 'Web & SaaS', summary: 'Helping healthcare teams do their best work with an all-in-one practice management platform.' },
   'Cockpit': { category: 'AI', summary: 'Turning sales conversations into clear next steps with AI-powered notes and workflows.' },
   'AP Motorworks': { category: 'Web & SaaS', summary: 'Explore, compare, and configure a Porsche 911. Save your build, share it, and make it yours.' },
