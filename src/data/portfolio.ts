@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Smartphone, Code2, Server, Database, Wrench } from 'lucide-react';
+import { ExternalLink, Github, Instagram, Smartphone, Code2, Server, Database, Wrench } from 'lucide-react';
 
 
 export const projects = [
@@ -25,6 +25,11 @@ export const projects = [
         label: 'GitHub',
         icon: Github,
         url: 'https://github.com/pavich5/SmartTermin'
+      },
+      {
+        label: 'Instagram',
+        icon: Instagram,
+        url: 'https://www.instagram.com/smartermin/'
       }
     ],
   },
