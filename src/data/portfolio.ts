@@ -19,7 +19,7 @@ export const projects = [
       {
         label: 'Live Site',
         icon: ExternalLink,
-        url: 'https://smartermin.com/'
+        url: 'https://beauty-term-c189-g4t6dpwlq-pavich5s-projects.vercel.app'
       },
       {
         label: 'GitHub',
