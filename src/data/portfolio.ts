@@ -3,8 +3,8 @@ import { ExternalLink, Github, Instagram, Smartphone, Code2, Server, Database, W
 
 export const projects = [
   {
-    title: 'The World Behind You',
-    subtitle: 'The World Behind Your Eyes · eBook Storefront',
+    title: 'The World Behind Your Eyes',
+    subtitle: 'eBook Storefront',
     description:
       'A Next.js storefront I built for The World Behind Your Eyes by Adrian Valcair. It includes online payments through Creem, Google sign-in through Clerk, a chapter preview, and a personal purchase library. Purchased PDFs have protected reading and download access verified on the server. The source repository is private.',
     image: '/assets/project-online-book-sales-page.png',

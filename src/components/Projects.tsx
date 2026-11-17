@@ -4,7 +4,7 @@ import { projects } from '../data/portfolio';
 import { SectionHeading } from './SectionHeading';
 
 const projectInfo: Record<string, { category: string; summary: string }> = {
-  'The World Behind You': { category: 'Web & SaaS', summary: 'A book storefront with online payments, Google sign-in, a chapter preview, and a personal reading library.' },
+  'The World Behind Your Eyes': { category: 'Web & SaaS', summary: 'A book storefront with online payments, Google sign-in, a chapter preview, and a personal reading library.' },
   'CreateShorts': { category: 'AI', summary: 'AI decides where to cut long videos into short clips. Refine the results with captions, hooks, and framing. Download from GitHub and run locally.' },
   'Smart Termin': { category: 'Web & SaaS', summary: 'Less admin. More appointments. A complete booking platform for beauty professionals.' },
   'Globetrotter': { category: 'Web & SaaS', summary: 'A full-stack travel platform with curated trips, Clerk authentication, and secure Stripe payments.' },
