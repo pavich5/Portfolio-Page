@@ -3,6 +3,49 @@ import { ExternalLink, Github, Instagram, Smartphone, Code2, Server, Database, W
 
 export const projects = [
   {
+    title: 'The World Behind You',
+    subtitle: 'The World Behind Your Eyes · eBook Storefront',
+    description:
+      'A Next.js storefront I built for The World Behind Your Eyes by Adrian Valcair. It includes online payments through Creem, Google sign-in through Clerk, a chapter preview, and a personal purchase library. Purchased PDFs have protected reading and download access verified on the server. The source repository is private.',
+    image: '/assets/project-online-book-sales-page.png',
+    features: [
+      'Responsive literary storefront and chapter preview',
+      'Online payments through Creem with guest and account checkout',
+      'Google sign-in through Clerk and a personal purchase library',
+      'Server-verified PDF reading and downloads',
+      'Purchase confirmation emails'
+    ],
+    links: [
+      {
+        label: 'Live Site',
+        icon: ExternalLink,
+        url: 'https://worldbehindyoureyes.com/'
+      }
+    ],
+  },
+  {
+    title: 'CreateShorts',
+    subtitle: 'Local AI Video Clipping Studio',
+    description:
+      'CreateShorts is a locally installed video-clipping workspace I built with a React dashboard and Python processing backend. Users can upload footage or paste a video link, and AI decides where to cut it into short clips. The clips can then be edited and exported for Shorts, Reels, and TikTok. The source and Docker setup instructions are available on GitHub.',
+    image: '/assets/project-create-shorts.png',
+    features: [
+      'AI analyzes videos and decides where to cut them into short clips',
+      'Editable captions, caption styles, and hook text',
+      'Clip trimming, image overlays, and framing controls',
+      'Vertical, square, and landscape exports',
+      'Local video library with categories and saved versions',
+      'Docker setup with configurable AI providers'
+    ],
+    links: [
+      {
+        label: 'GitHub / Setup',
+        icon: Github,
+        url: 'https://github.com/pavich5/CreateShorts'
+      }
+    ],
+  },
+  {
     title: 'Smart Termin',
     subtitle: 'SaaS Booking Platform',
     description:
@@ -108,61 +151,6 @@ export const projects = [
     links: [
       { label: 'Live Site', icon: ExternalLink, url: 'https://ap-motorworks.vercel.app/' },
       { label: 'GitHub', icon: Github, url: 'https://github.com/pavich5/ap-motorworks' }
-    ],
-  },
-  {
-    title: 'Quarzo Life',
-    subtitle: 'Life Insurance Platform (Team Contributor)',
-    description:
-      'At Ludotech, I contribute to Quarzo Life, a digital life-insurance infrastructure platform for the French market. My work includes death-settlement flows for insured individuals and beneficiary clauses, broker authorization and policy eligibility checks, and scheduling one-off and recurring premium contributions. I have also implemented AES-256-GCM encryption with Vault-managed keys and HMAC-SHA-256 hashing for secure IBAN matching and GDPR-focused data protection.',
-    image: '/assets/project-quarzo-life.png',
-    features: [
-      'Death-settlement and beneficiary-clause workflows',
-      'Broker authorization and policy eligibility checks',
-      'One-off and recurring premium scheduling',
-      'AES-256-GCM encryption with Vault-managed keys',
-      'HMAC-SHA-256 hashing for secure IBAN matching'
-    ],
-    links: [
-      {
-        label: 'Live Site',
-        icon: ExternalLink,
-        url: 'https://www.quarzo-life.com/'
-      },
-    ],
-  },
-  {
-    title: 'Pabau',
-    subtitle: 'Healthcare Platform (Team Contributor)',
-    description:
-      'From 2023 to 2025, I worked on Pabau, a healthcare practice-management platform for clinics. I optimized a PostgreSQL chart query over five million rows from 60 seconds to 3 seconds, built Excel and CSV report exports with Amazon S3 downloads, and maintained unit and Playwright end-to-end tests to prevent regressions.',
-    image: '/assets/project-pabau.jpg',
-    features: [
-      'PostgreSQL query optimization across five million rows',
-      'Chart query runtime reduced from 60 seconds to 3 seconds',
-      'Excel and CSV exports for clinic reports',
-      'Report downloads through Amazon S3',
-      'Unit and Playwright end-to-end testing'
-    ],
-    links: [
-      { label: 'pabau.com', icon: ExternalLink, url: 'https://pabau.com/' }
-    ],
-  },
-  {
-    title: 'Cockpit',
-    subtitle: 'AI Assistant (Team Contributor)',
-    description:
-      'At Ludotech, I contributed to Cockpit, an AI-powered CRM and meeting-intelligence product. I built GPT-powered Playbooks that detect user-defined meeting topics and generate summaries, developed meeting video-player and transcript features with Rust and HTML, and helped migrate the product from HTMX to React while adding real-time updates with ElectricSQL.',
-    image: '/assets/project-cockpit.png',
-    features: [
-      'GPT-powered Playbooks and meeting summaries',
-      'User-defined meeting-topic detection',
-      'Meeting video-player and transcript features',
-      'V2 migration from HTMX to React',
-      'Real-time updates with ElectricSQL'
-    ],
-    links: [
-      { label: 'getcockpit.io', icon: ExternalLink, url: 'https://getcockpit.io/' }
     ],
   },
   {

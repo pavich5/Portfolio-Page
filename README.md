@@ -28,6 +28,8 @@ The production website is generated in `dist/` and can be hosted on any static h
 
 The contact section opens the visitor’s email app or copies the email address. It does not require a backend or claim that a message has been sent.
 
+The color theme follows the visitor’s system appearance and updates when that setting changes. The header toggle switches themes temporarily; reloading returns to the system setting.
+
 ## Browser verification
 
-Checked layouts from 320px to 1440px wide, including mobile navigation, Escape dismissal, project filters and expanded details, theme persistence, email copying, and asset loading. `npm run build` produces the deployable static site.
+Checked layouts from 320px to 1440px wide, including mobile navigation, Escape dismissal, project filters and expanded details, system appearance changes, manual theme switching, email copying, and asset loading. `npm run build` produces the deployable static site.

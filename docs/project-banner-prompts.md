@@ -2,6 +2,38 @@
 
 Generated with the built-in image_gen tool. These are portfolio concept illustrations, not application screenshots.
 
+## OnlineBookSalesPage
+
+Saved original: `public/assets/project-online-book-sales-page.png`
+
+Responsive variants: `public/assets/project-online-book-sales-page-720.webp` and `public/assets/project-online-book-sales-page-1440.webp`.
+
+### Final prompt
+
+Use case: ads-marketing. Asset type: portfolio project banner, landscape 1536x1024 (3:2).
+Create one finished, polished portfolio banner for the web project "OnlineBookSalesPage", the eBook storefront for The World Behind Your Eyes by Adrian Valcair.
+Input images: image 1 is a STYLE reference only, an existing AP Motorworks banner; image 2 is the actual book cover and is a CONTENT reference to preserve faithfully on the depicted book.
+Match the existing portfolio's luminous white and very pale ice-blue backdrop, thin flowing white lines, deep cobalt large title on the left, softly tilted premium browser mockup on the right, and refined realistic 3D product rendering. Generous safe margins, clear at small card size.
+Text exactly: large two-line title "ONLINE BOOK" / "SALES PAGE"; smaller subtitle "The World Behind Your Eyes".
+Main subject: a dimensional upright eBook/book mockup across the lower-left and center, using the ivory and dark forest-green cover design in the reference: the title The World Behind Your Eyes, triangle-eye-globe emblem, and author Adrian Valcair. A slim tablet or reader sits behind the book. Right side: floating browser panel displaying an elegant ivory and forest-green literary storefront with a small book cover, simple reading preview, and restrained checkout button. Maintain the cover's visual identity.
+No prices, no ratings, no sales statistics, no invented endorsement, no extra slogans, no watermark. This is a conceptual portfolio illustration, not a literal screenshot.
+
+## CreateShorts
+
+Saved original: `public/assets/project-create-shorts.png`
+
+Responsive variants: `public/assets/project-create-shorts-720.webp` and `public/assets/project-create-shorts-1440.webp`.
+
+### Final prompt
+
+Use case: ads-marketing. Asset type: portfolio project banner, landscape 1536x1024 (3:2).
+Create one finished, polished portfolio banner for the project "CreateShorts", a locally installed AI video-clipping and editing workspace.
+Input images: image 1 is a STYLE reference only (existing AP Motorworks banner), image 2 is a CONTENT reference showing the actual light CreateShorts caption editor. Use its interface structure and indigo/violet accent colors, not the personal video subject.
+Match the existing portfolio family: luminous white and pale ice-blue backdrop, delicate flowing white lines, large deep cobalt title on the upper-left, a premium tilted browser mockup on the right, subtle blue shadows and professional 3D rendering.
+Text exactly: large title "CreateShorts", smaller subtitle "Local AI video clipping studio".
+Main subject: elegant light browser editor on the right, with a large portrait 9:16 video preview containing a serene mountain landscape, caption-style tiles with abstract text lines, a trim timeline and small indigo controls. In lower-left and center show three overlapping vertical clip cards derived from the same landscape, each with a different crop, sparse caption blocks and a tasteful play icon; a restrained waveform/timeline connects the workflow visually. Keep the title prominent, safe margins, legible at thumbnail size. Show a local video editing application, not a hosted subscription service.
+No pricing, no ratings, no stats, no cloud-service claims, no social-platform logos, no GitHub metrics, no extra slogans, no watermark. Conceptual portfolio illustration, not a literal screenshot.
+
 ## AP Motorworks
 
 Saved original: `public/assets/project-ap-motorworks.png`

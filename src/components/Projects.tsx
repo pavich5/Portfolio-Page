@@ -4,12 +4,11 @@ import { projects } from '../data/portfolio';
 import { SectionHeading } from './SectionHeading';
 
 const projectInfo: Record<string, { category: string; summary: string }> = {
+  'The World Behind You': { category: 'Web & SaaS', summary: 'A book storefront with online payments, Google sign-in, a chapter preview, and a personal reading library.' },
+  'CreateShorts': { category: 'AI', summary: 'AI decides where to cut long videos into short clips. Refine the results with captions, hooks, and framing. Download from GitHub and run locally.' },
   'Smart Termin': { category: 'Web & SaaS', summary: 'Less admin. More appointments. A complete booking platform for beauty professionals.' },
   'Globetrotter': { category: 'Web & SaaS', summary: 'A full-stack travel platform with curated trips, Clerk authentication, and secure Stripe payments.' },
   'Moj Prevoz': { category: 'Mobile', summary: 'A North Macedonian ride-sharing app released on the App Store and Google Play, then removed for business reasons.' },
-  'Quarzo Life': { category: 'Web & SaaS', summary: 'Modern life-insurance infrastructure built for the French market with the engineering team at Ludotech.' },
-  'Pabau': { category: 'Web & SaaS', summary: 'Helping healthcare teams do their best work with an all-in-one practice management platform.' },
-  'Cockpit': { category: 'AI', summary: 'Turning sales conversations into clear next steps with AI-powered notes and workflows.' },
   'AP Motorworks': { category: 'Web & SaaS', summary: 'Explore, compare, and configure a Porsche 911. Save your build, share it, and make it yours.' },
   'GitHub': { category: 'Open source', summary: 'More of what I’m building: open-source projects, experiments, and code worth sharing.' },
 };
@@ -22,7 +21,7 @@ export function Projects() {
   return (
     <section id="projects" className="section projects-section container" aria-label="Selected work">
       <SectionHeading number="01" label="SELECTED WORK" title={<>Built to make<br />a difference<span className="accent-period">.</span></>}>
-        <p>A selection of personal products and team contributions. Real problems, thoughtful solutions.</p>
+        <p>Personal products and experiments built around real problems.</p>
       </SectionHeading>
       <div className="project-toolbar">
         <div className="project-filters" role="group" aria-label="Filter projects">

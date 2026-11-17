@@ -14,9 +14,11 @@
       <title>Antonio Pavic | Full-Stack Software Engineer</title>
       <script>
         try {
-          const theme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+          const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
           document.documentElement.dataset.theme = theme;
+          document.documentElement.classList.toggle('dark', theme === 'dark');
           document.documentElement.style.colorScheme = theme;
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#191b18' : '#f8f9f5');
         } catch {}
       </script>
     </head>
